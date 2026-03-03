@@ -1,0 +1,196 @@
+# ---------------------------------------------------------------------------
+# AI Research Software Repository
+# Keep research code, benchmarks, datasets, notebooks, evaluation artifacts,
+# model cards, figures, reports, and reproducible experiment assets versioned.
+# Exclude local assistant instructions, scratch state, secrets, caches, and noise.
+# ---------------------------------------------------------------------------
+
+# === Local AI assistant / agent operational state ===
+.ai/
+.ai-work/
+.ai_work/
+.agent/
+.agents/
+.agent-work/
+.agent_work/
+.llm/
+.llm-cache/
+llm-cache/
+.ai-cache/
+ai-cache/
+.codex/
+.claude/
+.cursor/
+.continue/
+.aider/
+.roo/
+.cline/
+.windsurf/
+.openai/
+copilot-workspace/
+agent-scratch/
+agent_scratch/
+ai-scratch/
+ai_scratch/
+scratch/ai/
+scratch/agents/
+
+# Local assistant instruction files
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+COPILOT.md
+.cursorules
+.clinerules
+.roorules
+.github/copilot-instructions.md
+
+# Local prompt/chat transcripts and assistant exports
+prompt-logs/
+prompt_logs/
+chat-logs/
+chat_logs/
+conversation-logs/
+conversation_logs/
+*.chatlog
+*.promptlog
+*.llmlog
+*.conversation.json
+*.conversations.json
+*.chat-export.json
+*.prompt-export.json
+
+# NOTE:
+# Do not ignore generic research directories such as prompts/, evals/, datasets/,
+# notebooks/, results/, or benchmarks/. These may be substantive experiment
+# artifacts required for reproducibility.
+
+# === Secrets and machine-local configuration ===
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+.secrets/
+credentials/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+.venv_*/
+venv/
+env/
+
+# === Jupyter / local research scratch ===
+.jupyter/
+.ipython/
+.nbsignatures.db
+*.nbconvert.ipynb
+*.autosave
+*.bak
+*.tmp
+*.temp
+*~
+tmp/
+temp/
+
+# === IDE / editor state ===
+.vscode/
+.idea/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# === Obsidian machine-local UI state ===
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache/
+.trash/
+
+# === Operating system noise ===
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+ehthumbs.db
+
+# === Logs and local runtime files ===
+*.log
+logs/
+*.pid
+*.pid.lock
+*.lock.tmp
+
+# === Python packaging / build outputs ===
+dist/
+build/
+site/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# === Node / frontend tooling ===
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.next/
+.nuxt/
+coverage/
+
+# === ML / MLOps local caches ===
+.cache/
+.huggingface/
+transformers_cache/
+torch_cache/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+ray_results/
+
+# === Local vector DB / RAG runtime state ===
+chroma/
+chroma_db/
+.qdrant/
+qdrant_storage/
+faiss_index/
+*.faiss
+*.index.local
+
+# === Local model weights / large runtime artifacts ===
+models/local/
+checkpoints/local/
+artifacts/local/
+exports/local/
+results/local/
+
+# === Test/runtime scratch ===
+.tox/
+.nox/
+hypothesis/
+.pytest_tmp/
