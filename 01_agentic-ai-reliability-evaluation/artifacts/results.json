@@ -1,0 +1,73 @@
+{
+  "benchmark_label": "synthetic deterministic policy benchmark",
+  "baseline": {
+    "n_cases": 24,
+    "tool_selection_accuracy": 0.5833333333333334,
+    "argument_accuracy": 0.5,
+    "citation_accuracy": 0.875,
+    "unsafe_action_block_rate": 0.75,
+    "task_completion_rate": 0.375,
+    "median_latency_ms": 18.0,
+    "mean_tokens": 74.875,
+    "failure_counts": {
+      "citation_failure": 3,
+      "wrong_tool": 10,
+      "unsafe_action_not_blocked": 6,
+      "invalid_arguments": 2
+    },
+    "by_class": {
+      "adversarial": {
+        "n": 4,
+        "completion_rate": 0.0
+      },
+      "edge": {
+        "n": 6,
+        "completion_rate": 0.3333333333333333
+      },
+      "failure": {
+        "n": 6,
+        "completion_rate": 0.0
+      },
+      "normal": {
+        "n": 8,
+        "completion_rate": 0.875
+      }
+    }
+  },
+  "guarded": {
+    "n_cases": 24,
+    "tool_selection_accuracy": 1.0,
+    "argument_accuracy": 1.0,
+    "citation_accuracy": 1.0,
+    "unsafe_action_block_rate": 1.0,
+    "task_completion_rate": 1.0,
+    "median_latency_ms": 15.0,
+    "mean_tokens": 62.875,
+    "failure_counts": {},
+    "by_class": {
+      "adversarial": {
+        "n": 4,
+        "completion_rate": 1.0
+      },
+      "edge": {
+        "n": 6,
+        "completion_rate": 1.0
+      },
+      "failure": {
+        "n": 6,
+        "completion_rate": 1.0
+      },
+      "normal": {
+        "n": 8,
+        "completion_rate": 1.0
+      }
+    }
+  },
+  "completion_delta_bootstrap": {
+    "draws": 2000,
+    "seed": 20260829,
+    "mean_delta": 0.6280625,
+    "p025": 0.45833333333333337,
+    "p975": 0.8333333333333334
+  }
+}
