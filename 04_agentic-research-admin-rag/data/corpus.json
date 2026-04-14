@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id":"NSF_PREP",
+    "title":"NSF Preparing Your Proposal",
+    "source_type":"public-official-paraphrase",
+    "url":"https://www.nsf.gov/funding/preparing-proposal",
+    "tags":["NSF","proposal","checklist"],
+    "text":"NSF research proposals generally include a one-page project summary, project description, references cited, senior/key personnel documents, budget and justification, facilities and resources, and when applicable mentoring and data-management/sharing plans. Program solicitations may modify standard PAPPG requirements."
+  },
+  {
+    "doc_id":"NSF_SUBMIT",
+    "title":"NSF Submitting Your Proposal",
+    "source_type":"public-official-paraphrase",
+    "url":"https://www.nsf.gov/funding/submitting-proposal",
+    "tags":["NSF","submission","Research.gov","Grants.gov"],
+    "text":"NSF proposals are commonly submitted through Research.gov or Grants.gov. An Authorized Organizational Representative submits on behalf of the organization. NSF recommends starting Grants.gov submission at least five business days before a deadline to address validation errors."
+  },
+  {
+    "doc_id":"NSF_PAPPG",
+    "title":"NSF PAPPG Current Policy Page",
+    "source_type":"public-official-paraphrase",
+    "url":"https://www.nsf.gov/policies/pappg",
+    "tags":["NSF","PAPPG","policy"],
+    "text":"The NSF Proposal and Award Policies and Procedures Guide governs proposal and award processes. The applicable version depends on when a proposal or application is submitted, and solicitation-specific instructions can override general provisions."
+  },
+  {
+    "doc_id":"NIH_SUBMIT",
+    "title":"NIH Submission Policies",
+    "source_type":"public-official-paraphrase",
+    "url":"https://www.grants.nih.gov/grants-process/submit/submission-policies",
+    "tags":["NIH","deadline","submission"],
+    "text":"NIH expects applications to be submitted on time. When a due date falls on a weekend, federal holiday, or qualifying federal office closure, the deadline is generally extended to the next business day. Late applications are accepted only in limited circumstances."
+  },
+  {
+    "doc_id":"SYN_ROUTING",
+    "title":"Synthetic University Research Office Routing Policy",
+    "source_type":"synthetic",
+    "url":"synthetic://research-office/routing-v1",
+    "tags":["internal","routing","approval"],
+    "text":"Synthetic policy for demonstration only: investigators should route a proposal package to the research office seven calendar days before the sponsor deadline. Only an authorized institutional official may submit an external application. The copilot may prepare checklists and comparisons but may not submit."
+  },
+  {
+    "doc_id":"SYN_SECURITY",
+    "title":"Synthetic Research Copilot Permission Policy",
+    "source_type":"synthetic",
+    "url":"synthetic://research-office/copilot-permissions-v1",
+    "tags":["permissions","safety","audit"],
+    "text":"Synthetic policy for demonstration only: read-only policy search, checklist generation, deadline lookup, and document comparison are allowed. Sending email, submitting applications, deleting records, or changing permissions requires explicit human approval and remains simulated in this portfolio system."
+  }
+]

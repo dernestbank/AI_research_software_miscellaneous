@@ -1,0 +1,14 @@
+{
+  "id": "SYN-CALL-V2",
+  "synthetic": true,
+  "title": "Research Analytics Pilot Call",
+  "deadline": "2026-10-15",
+  "max_budget_usd": 75000,
+  "required_documents": [
+    "Concept paper",
+    "Budget",
+    "PI CV",
+    "Data management note"
+  ],
+  "allow_subawards": true
+}

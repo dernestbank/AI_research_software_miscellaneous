@@ -1,0 +1,53 @@
+[
+  {
+    "id": "SYN-NSF-ENG-2026",
+    "synthetic": true,
+    "sponsor": "Synthetic NSF-style program",
+    "title": "Sustainable Engineering Systems Seed Award",
+    "deadline": "2026-10-15T17:00:00-04:00",
+    "timezone": "America/New_York",
+    "required_documents": [
+      "Project Summary",
+      "Project Description",
+      "Budget",
+      "Budget Justification",
+      "Facilities and Resources",
+      "Data Management and Sharing Plan",
+      "Mentoring Plan if graduate students or postdoctoral researchers are supported"
+    ],
+    "contact": "synthetic@example.invalid"
+  },
+  {
+    "id": "SYN-NIH-R01-2026",
+    "synthetic": true,
+    "sponsor": "Synthetic NIH-style program",
+    "title": "Data-Driven Health Systems R01 Demo",
+    "deadline": "2026-10-05T17:00:00-04:00",
+    "timezone": "America/New_York",
+    "required_documents": [
+      "Research Strategy",
+      "Specific Aims",
+      "Budget",
+      "Budget Justification",
+      "Biosketches",
+      "Facilities and Other Resources",
+      "Data Management and Sharing Plan"
+    ],
+    "contact": "synthetic@example.invalid"
+  },
+  {
+    "id": "SYN-CAMPUS-SEED-2026",
+    "synthetic": true,
+    "sponsor": "Synthetic University",
+    "title": "Campus Research Seed Grant",
+    "deadline": "2026-09-30T23:59:00-04:00",
+    "timezone": "America/New_York",
+    "required_documents": [
+      "Two-page concept note",
+      "One-page budget",
+      "PI CV",
+      "Compliance screening form"
+    ],
+    "contact": "synthetic@example.invalid"
+  }
+]
