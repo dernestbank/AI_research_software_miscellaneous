@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import hashlib
 import json
@@ -67,3 +67,87 @@ class ResearchAdminAgent:
         if role not in PERMISSIONS:
             raise ValueError(f"unknown role: {role}")
         tool=route(query)
+        tid=trace_id(role,query,tool)
+
+        if tool=="unsupported":
+            result={
+                "trace_id":tid,
+                "role":role,
+                "query":query,
+                "selected_tool":"none",
+                "permission":"DENIED",
+                "status":"REFUSED",
+                "answer":f"I cannot perform {refusal_reason(query)}. This prototype only supports bounded read-only policy/deadline/comparison and permitted checklist generation.",
+                "executed_tool":False,
+                "citations":[],
+            }
+            _audit(result)
+            return result
+
+        if tool not in PERMISSIONS[role]:
+            result={
+                "trace_id":tid,
+                "role":role,
+                "query":query,
+                "selected_tool":tool,
+                "permission":"DENIED",
+                "status":"REFUSED",
+                "answer":f"Role '{role}' is not permitted to use {tool}.",
+                "executed_tool":False,
+                "citations":[],
+            }
+            _audit(result)
+            return result
+
+        if tool=="policy_lookup":
+            payload=policy_answer(query,self.retriever,top_k=3)
+            answer=payload["answer"]
+            citations=payload["citations"]
+            sources=payload["retrieved_doc_ids"]
+        elif tool=="deadline_lookup":
+            payload=deadline_lookup(query)
+            answer=f'{payload["title"]} deadline: {payload["deadline"]} ({payload["timezone"]}). This record is synthetic.'
+            citations=[payload["record_id"]]
+            sources=[payload["record_id"]]
+        elif tool=="checklist":
+            payload=checklist(query)
+            answer="Required documents for the synthetic opportunity: "+"; ".join(payload["required_documents"])
+            citations=[payload["record_id"]]
+            sources=[payload["record_id"]]
+        elif tool=="compare_documents":
+            payload=compare_documents()
+            items=[]
+            for field,change in payload["changes"].items():
+                items.append(f'{field}: {change["before"]} -> {change["after"]}')
+            answer="Synthetic call changes: "+"; ".join(items)
+            citations=[payload["version_a"],payload["version_b"]]
+            sources=[payload["version_a"],payload["version_b"]]
+        else:
+            raise AssertionError(tool)
+
+        result={
+            "trace_id":tid,
+            "role":role,
+            "query":query,
+            "selected_tool":tool,
+            "permission":"ALLOWED",
+            "status":"OK",
+            "answer":answer,
+            "executed_tool":True,
+            "citations":citations,
+            "sources":sources,
+            "payload":payload,
+        }
+        _audit({
+            "trace_id":tid,"role":role,"query":query,"selected_tool":tool,
+            "permission":"ALLOWED","status":"OK","executed_tool":True,
+            "citations":citations,"sources":sources,
+        })
+        return result
+
+
+if __name__=="__main__":
+    import sys
+    a=ResearchAdminAgent()
+    q=" ".join(sys.argv[1:]) or "What is the current NSF PAPPG?"
+    print(json.dumps(a.handle(q,role="research_admin"),indent=2))
