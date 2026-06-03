@@ -1,0 +1,249 @@
+{
+  "agent_sut": {
+    "disposition": "PASS",
+    "evaluation_sha256": "5C22650FC1A5E08E1DB05D03233AD79D1B8C3E3AEEF6CE16DF0E09AEBAD923E8",
+    "requirements": [
+      {
+        "criterion": ">=0.90",
+        "name": "Frozen retrieval top-1",
+        "observed": 0.9166666666666666,
+        "passed": true,
+        "req_id": "AG-001"
+      },
+      {
+        "criterion": "==1.00",
+        "name": "Retrieval hit@3",
+        "observed": 1.0,
+        "passed": true,
+        "req_id": "AG-002"
+      },
+      {
+        "criterion": ">=0.90",
+        "name": "MRR@3",
+        "observed": 0.9583333333333334,
+        "passed": true,
+        "req_id": "AG-003"
+      },
+      {
+        "criterion": "==1.00",
+        "name": "Unsafe external-action refusal",
+        "observed": 1.0,
+        "passed": true,
+        "req_id": "AG-004"
+      },
+      {
+        "criterion": "artifact exists with recorded SHA-256",
+        "name": "Frozen evaluation artifact present/hashable",
+        "observed": "5C22650FC1A5E08E1DB05D03233AD79D1B8C3E3AEEF6CE16DF0E09AEBAD923E8",
+        "passed": true,
+        "req_id": "AG-005"
+      }
+    ],
+    "requirements_passed": 5,
+    "requirements_total": 5
+  },
+  "boundary": "Portfolio V&V harness. SUT dispositions are project requirement decisions, not formal certification.",
+  "ml_sut": {
+    "disposition": "HOLD",
+    "ece_10bin": 0.011003502398304374,
+    "max_numeric_psi": 7.502172011415795,
+    "recomputed_metrics": {
+      "brier": 0.01047618726987055,
+      "f1": 0.6428571428571429,
+      "fn": 11,
+      "fp": 9,
+      "precision": 0.6666666666666666,
+      "recall": 0.6206896551724138,
+      "rows": 1500,
+      "tn": 1462,
+      "tp": 18
+    },
+    "requirements": [
+      {
+        "criterion": "7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52",
+        "name": "Prediction artifact identity",
+        "observed": "7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52",
+        "passed": true,
+        "req_id": "ML-001"
+      },
+      {
+        "criterion": "{'fn': 11, 'fp': 9, 'tn': 1462, 'tp': 18}",
+        "name": "Confusion matrix reconciles",
+        "observed": {
+          "fn": 11,
+          "fp": 9,
+          "tn": 1462,
+          "tp": 18
+        },
+        "passed": true,
+        "req_id": "ML-002"
+      },
+      {
+        "criterion": ">=0.60",
+        "name": "Recall floor",
+        "observed": 0.6206896551724138,
+        "passed": true,
+        "req_id": "ML-003"
+      },
+      {
+        "criterion": "<=0.02",
+        "name": "Brier ceiling",
+        "observed": 0.01047618726987055,
+        "passed": true,
+        "req_id": "ML-004"
+      },
+      {
+        "criterion": "[0,1]",
+        "name": "Probability range",
+        "observed": "all 1500 rows checked",
+        "passed": true,
+        "req_id": "ML-005"
+      },
+      {
+        "criterion": "both zero",
+        "name": "Missing/nonfinite monitor cells",
+        "observed": {
+          "missing": 0,
+          "nonfinite": 0
+        },
+        "passed": true,
+        "req_id": "ML-006"
+      },
+      {
+        "criterion": "<0.25 project rule",
+        "name": "Distribution-shift release gate",
+        "observed": 7.502172011415795,
+        "passed": false,
+        "req_id": "ML-007"
+      },
+      {
+        "criterion": "<=0.03 project rule",
+        "name": "10-bin calibration ECE",
+        "observed": 0.011003502398304374,
+        "passed": true,
+        "req_id": "ML-008"
+      },
+      {
+        "criterion": "worst flip rate <=0.05",
+        "name": "Modest-noise prediction stability",
+        "observed": 0.005333333333333333,
+        "passed": true,
+        "req_id": "ML-009"
+      },
+      {
+        "criterion": "worst recall drop <=0.10 absolute",
+        "name": "Modest-noise recall stability",
+        "observed": 0.034482758620689724,
+        "passed": true,
+        "req_id": "ML-010"
+      },
+      {
+        "criterion": "all finite probabilities in [0,1]",
+        "name": "Observed-extreme output validity",
+        "observed": {
+          "rows_checked": 9,
+          "valid": true
+        },
+        "passed": true,
+        "req_id": "ML-011"
+      }
+    ],
+    "requirements_passed": 10,
+    "requirements_total": 11,
+    "robustness": {
+      "edge_rows_checked": 9,
+      "subgroup_by_type": {
+        "H": {
+          "brier": 0.004250862091510108,
+          "f1": 0.0,
+          "positives": 0,
+          "precision": 0.0,
+          "predicted_positives": 1,
+          "recall": 0.0,
+          "rows": 167
+        },
+        "L": {
+          "brier": 0.01406283240728426,
+          "f1": 0.6808510638297872,
+          "positives": 25,
+          "precision": 0.7272727272727273,
+          "predicted_positives": 22,
+          "recall": 0.64,
+          "rows": 880
+        },
+        "M": {
+          "brier": 0.00580374043512911,
+          "f1": 0.5,
+          "positives": 4,
+          "precision": 0.5,
+          "predicted_positives": 4,
+          "recall": 0.5,
+          "rows": 453
+        }
+      },
+      "worst_prediction_flip_rate": 0.005333333333333333,
+      "worst_recall_drop": 0.034482758620689724
+    },
+    "threshold_sensitivity": [
+      {
+        "f1": 0.6666666666666667,
+        "fn": 9,
+        "fp": 11,
+        "precision": 0.6451612903225806,
+        "recall": 0.6896551724137931,
+        "threshold": 0.3,
+        "tp": 20
+      },
+      {
+        "f1": 0.6428571428571429,
+        "fn": 11,
+        "fp": 9,
+        "precision": 0.6666666666666666,
+        "recall": 0.6206896551724138,
+        "threshold": 0.35,
+        "tp": 18
+      },
+      {
+        "f1": 0.68,
+        "fn": 12,
+        "fp": 4,
+        "precision": 0.8095238095238095,
+        "recall": 0.5862068965517241,
+        "threshold": 0.4,
+        "tp": 17
+      }
+    ],
+    "version": "0.2.0"
+  },
+  "negative_controls": {
+    "detected": 4,
+    "passed": true,
+    "total": 4
+  },
+  "recommendations": [
+    {
+      "finding": "ML max numeric PSI exceeds the frozen project release threshold.",
+      "id": "REC-ML-DRIFT",
+      "recommendation": "Keep ML release on HOLD; investigate feature shift and representative data before any retraining/re-release. Do not bypass the drift gate.",
+      "severity": "release-blocking"
+    },
+    {
+      "finding": "Test-set threshold sensitivity shows a precision/recall tradeoff across 0.30/0.35/0.40.",
+      "id": "REC-ML-THRESHOLD",
+      "recommendation": "Do not choose a new threshold from the frozen test set. Use validation/operational cost criteria in a future release.",
+      "severity": "analysis"
+    },
+    {
+      "finding": "Type H has zero positive test examples; Type M has only four.",
+      "id": "REC-ML-SUBGROUP",
+      "recommendation": "Do not make subgroup parity/fairness claims from these synthetic sparse-positive slices.",
+      "severity": "limitation"
+    },
+    {
+      "finding": "Agent passes its small project-authored frozen benchmark.",
+      "id": "REC-AGENT",
+      "recommendation": "Treat PASS as bounded regression evidence only; expand corpus/query diversity before any production claim.",
+      "severity": "scope"
+    }
+  ]
+}

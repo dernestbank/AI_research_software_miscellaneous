@@ -1,0 +1,28 @@
+{
+  "baseline_valid": true,
+  "cases": [
+    {
+      "case": "modified_probability_hash",
+      "detected": true,
+      "reason": "hash_mismatch"
+    },
+    {
+      "case": "missing_probability_column",
+      "detected": true,
+      "reason": "missing_required_column"
+    },
+    {
+      "case": "probability_1p5",
+      "detected": true,
+      "reason": "probability_out_of_range"
+    },
+    {
+      "case": "nonnumeric_probability",
+      "detected": true,
+      "reason": "non_numeric_value"
+    }
+  ],
+  "detected": 4,
+  "total": 4,
+  "all_negative_controls_detected": true
+}

@@ -1,0 +1,180 @@
+{
+  "edge_probability_valid": true,
+  "edge_rows": [
+    {
+      "UDI": 1,
+      "failure_probability": 0.00923605386095081
+    },
+    {
+      "UDI": 917,
+      "failure_probability": 0.0
+    },
+    {
+      "UDI": 918,
+      "failure_probability": 0.00979740562600204
+    },
+    {
+      "UDI": 995,
+      "failure_probability": 0.29889344002433804
+    },
+    {
+      "UDI": 1785,
+      "failure_probability": 0.913561382091045
+    },
+    {
+      "UDI": 5115,
+      "failure_probability": 0.05730809365779537
+    },
+    {
+      "UDI": 5146,
+      "failure_probability": 0.07532449125639222
+    },
+    {
+      "UDI": 5402,
+      "failure_probability": 0.7038249595212478
+    },
+    {
+      "UDI": 7764,
+      "failure_probability": 0.41450085553542787
+    }
+  ],
+  "edge_rows_checked": 9,
+  "frozen_metrics": {
+    "brier": 0.01047618726987055,
+    "f1": 0.6428571428571429,
+    "positives": 29,
+    "precision": 0.6666666666666666,
+    "predicted_positives": 27,
+    "recall": 0.6206896551724138
+  },
+  "limitations": [
+    "Noise scales are project-defined stress values, not sensor specifications.",
+    "Subgroup Type metrics use a synthetic benchmark and small positive counts; no fairness claim.",
+    "Observed-source extrema do not prove behavior outside the source range."
+  ],
+  "noise_gate_flip_rate_pass": true,
+  "noise_gate_recall_drop_pass": true,
+  "noise_runs": [
+    {
+      "brier": 0.010510179130501032,
+      "f1": 0.6545454545454545,
+      "positives": 29,
+      "precision": 0.6923076923076923,
+      "predicted_positives": 26,
+      "prediction_flip_rate": 0.002,
+      "prediction_flips": 3,
+      "probability_mae_vs_frozen": 0.008445075495803388,
+      "probability_max_abs_delta": 0.19828732792167536,
+      "recall": 0.6206896551724138,
+      "recall_drop_vs_frozen": 0.0,
+      "seed": 20260829
+    },
+    {
+      "brier": 0.010900336663274859,
+      "f1": 0.6785714285714286,
+      "positives": 29,
+      "precision": 0.7037037037037037,
+      "predicted_positives": 27,
+      "prediction_flip_rate": 0.0026666666666666666,
+      "prediction_flips": 4,
+      "probability_mae_vs_frozen": 0.009111210176066215,
+      "probability_max_abs_delta": 0.23264944056966147,
+      "recall": 0.6551724137931034,
+      "recall_drop_vs_frozen": -0.03448275862068961,
+      "seed": 7
+    },
+    {
+      "brier": 0.010815375766538541,
+      "f1": 0.6909090909090909,
+      "positives": 29,
+      "precision": 0.7307692307692307,
+      "predicted_positives": 26,
+      "prediction_flip_rate": 0.0033333333333333335,
+      "prediction_flips": 5,
+      "probability_mae_vs_frozen": 0.008577233171665394,
+      "probability_max_abs_delta": 0.2797898352609883,
+      "recall": 0.6551724137931034,
+      "recall_drop_vs_frozen": -0.03448275862068961,
+      "seed": 42
+    },
+    {
+      "brier": 0.010443788294782496,
+      "f1": 0.6415094339622641,
+      "positives": 29,
+      "precision": 0.7083333333333334,
+      "predicted_positives": 24,
+      "prediction_flip_rate": 0.002,
+      "prediction_flips": 3,
+      "probability_mae_vs_frozen": 0.009485871829508184,
+      "probability_max_abs_delta": 0.2498049804534368,
+      "recall": 0.5862068965517241,
+      "recall_drop_vs_frozen": 0.034482758620689724,
+      "seed": 101
+    },
+    {
+      "brier": 0.010748636819351155,
+      "f1": 0.6538461538461539,
+      "positives": 29,
+      "precision": 0.7391304347826086,
+      "predicted_positives": 23,
+      "prediction_flip_rate": 0.005333333333333333,
+      "prediction_flips": 8,
+      "probability_mae_vs_frozen": 0.00849775932418056,
+      "probability_max_abs_delta": 0.26358229324998056,
+      "recall": 0.5862068965517241,
+      "recall_drop_vs_frozen": 0.034482758620689724,
+      "seed": 999
+    }
+  ],
+  "noise_scenario": {
+    "classification": "project stress scenario, not calibrated sensor error",
+    "clip_bounds": "observed full-source min/max",
+    "seeds": [
+      20260829,
+      7,
+      42,
+      101,
+      999
+    ],
+    "sigma": {
+      "Air temperature [K]": 0.2,
+      "Process temperature [K]": 0.2,
+      "Rotational speed [rpm]": 20.0,
+      "Tool wear [min]": 1.0,
+      "Torque [Nm]": 0.5
+    }
+  },
+  "subgroup_by_type": {
+    "H": {
+      "brier": 0.004250862091510108,
+      "f1": 0.0,
+      "positives": 0,
+      "precision": 0.0,
+      "predicted_positives": 1,
+      "recall": 0.0,
+      "rows": 167
+    },
+    "L": {
+      "brier": 0.01406283240728426,
+      "f1": 0.6808510638297872,
+      "positives": 25,
+      "precision": 0.7272727272727273,
+      "predicted_positives": 22,
+      "recall": 0.64,
+      "rows": 880
+    },
+    "M": {
+      "brier": 0.00580374043512911,
+      "f1": 0.5,
+      "positives": 4,
+      "precision": 0.5,
+      "predicted_positives": 4,
+      "recall": 0.5,
+      "rows": 453
+    }
+  },
+  "sut_version": "0.2.0",
+  "threshold": 0.3499999999999999,
+  "worst_prediction_flip_rate": 0.005333333333333333,
+  "worst_recall_drop": 0.034482758620689724
+}
