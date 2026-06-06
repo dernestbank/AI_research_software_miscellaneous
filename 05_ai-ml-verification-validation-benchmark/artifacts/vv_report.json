@@ -1,0 +1,108 @@
+{
+  "sut_version": "0.2.0",
+  "requirements": [
+    {
+      "req_id": "REQ-001",
+      "name": "Prediction artifact identity",
+      "passed": true,
+      "observed": "7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52",
+      "criterion": "7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52"
+    },
+    {
+      "req_id": "REQ-002",
+      "name": "Confusion matrix reconciles",
+      "passed": true,
+      "observed": {
+        "tn": 1462,
+        "fp": 9,
+        "fn": 11,
+        "tp": 18
+      },
+      "criterion": "{'fn': 11, 'fp': 9, 'tn': 1462, 'tp': 18}"
+    },
+    {
+      "req_id": "REQ-003",
+      "name": "Recall floor",
+      "passed": true,
+      "observed": 0.6206896551724138,
+      "criterion": ">=0.60"
+    },
+    {
+      "req_id": "REQ-004",
+      "name": "Brier ceiling",
+      "passed": true,
+      "observed": 0.01047618726987055,
+      "criterion": "<=0.02"
+    },
+    {
+      "req_id": "REQ-005",
+      "name": "Probability range",
+      "passed": true,
+      "observed": "all 1500 rows checked",
+      "criterion": "[0,1]"
+    },
+    {
+      "req_id": "REQ-006",
+      "name": "Missing/nonfinite monitor cells",
+      "passed": true,
+      "observed": {
+        "missing": 0,
+        "nonfinite": 0
+      },
+      "criterion": "both zero"
+    },
+    {
+      "req_id": "REQ-007",
+      "name": "Distribution-shift release gate",
+      "passed": false,
+      "observed": 7.502172011415795,
+      "criterion": "<0.25 project rule"
+    }
+  ],
+  "requirements_passed": 6,
+  "requirements_total": 7,
+  "release_decision": "HOLD",
+  "recomputed_metrics": {
+    "rows": 1500,
+    "tn": 1462,
+    "fp": 9,
+    "fn": 11,
+    "tp": 18,
+    "precision": 0.6666666666666666,
+    "recall": 0.6206896551724138,
+    "f1": 0.6428571428571429,
+    "brier": 0.01047618726987055
+  },
+  "ece_10bin": 0.011003502398304374,
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.3,
+      "precision": 0.6451612903225806,
+      "recall": 0.6896551724137931,
+      "f1": 0.6666666666666667,
+      "tp": 20,
+      "fp": 11,
+      "fn": 9
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.6666666666666666,
+      "recall": 0.6206896551724138,
+      "f1": 0.6428571428571429,
+      "tp": 18,
+      "fp": 9,
+      "fn": 11
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.8095238095238095,
+      "recall": 0.5862068965517241,
+      "f1": 0.68,
+      "tp": 17,
+      "fp": 4,
+      "fn": 12
+    }
+  ],
+  "monitoring_status": "ALERT",
+  "max_numeric_psi": 7.502172011415795
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-29",
+  "python": "3.13.5",
+  "numpy": "2.4.1",
+  "pandas": "3.0.0",
+  "scipy": "1.16.3",
+  "scikit_learn": "1.8.0",
+  "joblib": "1.5.3",
+  "pytest": "9.0.2",
+  "requirements_source": "../03_ai-data-pipeline-mlops/releases/0.2.0/requirements.txt",
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "status": "PASSED"
+}
