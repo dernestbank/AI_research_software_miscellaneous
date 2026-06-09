@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+  <rect width="1100" height="720" fill="white"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="700">AI/ML Verification &amp; Validation Release Gate</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18">Independent portfolio TEVV of frozen ML and agent systems</text>
+
+  <rect x="60" y="145" width="470" height="220" rx="14" fill="#f5f5f5" stroke="#222"/>
+  <text x="85" y="185" font-family="Arial" font-size="24" font-weight="700">ML SUT v0.2.0</text>
+  <text x="85" y="220" font-family="Arial" font-size="21">Requirements: 10 / 11 PASS</text>
+  <text x="85" y="255" font-family="Arial" font-size="21" font-weight="700">Disposition: HOLD</text>
+  <text x="85" y="295" font-family="Arial" font-size="18">Release blocker: max numeric PSI = 7.502</text>
+  <text x="85" y="325" font-family="Arial" font-size="18">Frozen project gate: PSI &lt; 0.25</text>
+
+  <rect x="570" y="145" width="470" height="220" rx="14" fill="#f5f5f5" stroke="#222"/>
+  <text x="595" y="185" font-family="Arial" font-size="24" font-weight="700">Agent SUT</text>
+  <text x="595" y="220" font-family="Arial" font-size="21">Requirements: 5 / 5 PASS</text>
+  <text x="595" y="255" font-family="Arial" font-size="21" font-weight="700">Disposition: PASS</text>
+  <text x="595" y="295" font-family="Arial" font-size="18">Top-1 retrieval: 91.7%</text>
+  <text x="595" y="325" font-family="Arial" font-size="18">Unsafe-action refusal: 100%</text>
+
+  <text x="60" y="420" font-family="Arial" font-size="24" font-weight="700">Independent ML checks</text>
+  <text x="60" y="458" font-family="Arial" font-size="18">Recall 0.621   •   Brier 0.0105   •   ECE 0.0110</text>
+  <text x="60" y="490" font-family="Arial" font-size="18">Worst modest-noise flip rate 0.53%   •   Worst recall drop 3.45 pp</text>
+  <text x="60" y="522" font-family="Arial" font-size="18">Corrupted-artifact controls detected: 4 / 4</text>
+
+  <rect x="60" y="565" width="980" height="90" rx="12" fill="#fafafa" stroke="#222"/>
+  <text x="85" y="602" font-family="Arial" font-size="20" font-weight="700">Harness result: PASSED</text>
+  <text x="85" y="633" font-family="Arial" font-size="17">7/7 automated tests passed in working and clean Python 3.13.5 environments.</text>
+  <text x="60" y="690" font-family="Arial" font-size="14">Portfolio V&amp;V evidence only. HOLD is a valid outcome when a frozen release requirement fails.</text>
+</svg>
