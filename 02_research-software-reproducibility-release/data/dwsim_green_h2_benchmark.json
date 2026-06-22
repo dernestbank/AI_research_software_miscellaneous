@@ -1,0 +1,17 @@
+{
+  "provenance": {
+    "source_project": "01_Process_Engineering/09_dwsim-mcp",
+    "source_artifact": "artifacts/green_h2_bop_compression_results.json",
+    "validated_on": "2026-08-29",
+    "dwsim_environment": "10.2.3 / official 10.2 Docker MCP",
+    "label": "copied validated benchmark fixture; not newly simulated in this project"
+  },
+  "basis": {"feed_pressure_bar":20.0,"outlet_pressure_bar":200.0,"feed_temperature_K":308.15,"adiabatic_efficiency_pct":75.0},
+  "scenarios": [
+    {"hydrogen_kg_day":750,"dwsim_duty_kW":49.13113387326579,"independent_duty_kW":48.481237263948046,"mass_balance_error_kg_s":0.0,"solve_ok":true,"warning_count":0},
+    {"hydrogen_kg_day":1500,"dwsim_duty_kW":98.26226774653158,"independent_duty_kW":96.96247452789609,"mass_balance_error_kg_s":0.0,"solve_ok":true,"warning_count":0},
+    {"hydrogen_kg_day":3000,"dwsim_duty_kW":196.52453549306315,"independent_duty_kW":193.92494905579218,"mass_balance_error_kg_s":0.0,"solve_ok":true,"warning_count":0},
+    {"hydrogen_kg_day":6000,"dwsim_duty_kW":393.0490709861263,"independent_duty_kW":387.84989811158437,"mass_balance_error_kg_s":0.0,"solve_ok":true,"warning_count":0}
+  ],
+  "negative_case": {"solve_ok":true,"warning_count":0,"feed_pressure_bar":20.0,"out_pressure_bar":1.01325,"duty_kW":-334.9527198213507,"must_fail_physics_gate":true}
+}
