@@ -1,0 +1,8 @@
+{
+  "failure_detected_on_corrupt_live_model": true,
+  "live_model_hash_restored": "9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950",
+  "recovered_probability_sample": 0.0,
+  "release_model_hash": "9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950",
+  "release_version": "0.2.0",
+  "restored_from_verified_release": true
+}
