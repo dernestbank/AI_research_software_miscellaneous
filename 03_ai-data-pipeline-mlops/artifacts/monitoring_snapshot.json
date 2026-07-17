@@ -1,0 +1,19 @@
+{
+  "current": "UDI 8501-10000 frozen test split",
+  "max_numeric_psi": 7.502172011415795,
+  "max_numeric_psi_feature": "Air temperature [K]",
+  "missing_feature_cells": 0,
+  "nonfinite_numeric_cells": 0,
+  "numeric_psi": {
+    "Air temperature [K]": 7.502172011415795,
+    "Process temperature [K]": 2.972335783128396,
+    "Rotational speed [rpm]": 0.007750790057463118,
+    "Tool wear [min]": 0.005907886045358774,
+    "Torque [Nm]": 0.007908735338291938
+  },
+  "reference": "UDI 1-7000 training split",
+  "rows": 1500,
+  "status": "ALERT",
+  "threshold_note": "PSI>=0.25 or type total-variation>=0.10 is a project monitoring rule, not a universal production standard",
+  "type_distribution_total_variation": 0.01376190476190476
+}

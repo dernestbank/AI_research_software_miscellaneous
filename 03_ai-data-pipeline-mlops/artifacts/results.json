@@ -1,0 +1,59 @@
+{
+  "leakage_fields_excluded": [
+    "UDI",
+    "Product ID",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "max_numeric_psi": 7.502172011415795,
+  "model": "RandomForestClassifier(n_estimators=100,class_weight=balanced,min_samples_leaf=2,random_state=42,n_jobs=1)",
+  "model_version": "0.2.0",
+  "numeric_feature_psi_train_vs_test": {
+    "Air temperature [K]": 7.502172011415795,
+    "Process temperature [K]": 2.972335783128396,
+    "Rotational speed [rpm]": 0.007750790057463118,
+    "Tool wear [min]": 0.005907886045358774,
+    "Torque [Nm]": 0.007908735338291938
+  },
+  "runtime_observation": {
+    "batch_latency_ms": 37.12659999996504,
+    "batch_rows": 1500,
+    "mean_latency_ms_per_row": 0.024751066666643357,
+    "note": "environment-specific runtime observation; excluded from deterministic evidence hash"
+  },
+  "source_rows": 10000,
+  "source_sha256": "DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E",
+  "split_failure_prevalence": {
+    "test": 0.019333333333333334,
+    "train": 0.039714285714285716,
+    "validation": 0.021333333333333333
+  },
+  "split_rows": {
+    "test": 1500,
+    "train": 7000,
+    "validation": 1500
+  },
+  "test": {
+    "average_precision": 0.6972496471494228,
+    "brier": 0.010476187269870936,
+    "confusion_matrix": {
+      "fn": 11,
+      "fp": 9,
+      "tn": 1462,
+      "tp": 18
+    },
+    "f1": 0.6428571428571429,
+    "failures": 29,
+    "precision": 0.6666666666666666,
+    "prevalence": 0.019333333333333334,
+    "recall": 0.6206896551724138,
+    "roc_auc": 0.9316439672753698,
+    "rows": 1500,
+    "threshold": 0.3499999999999999
+  },
+  "validation_f1_at_threshold": 0.6666666666666666,
+  "validation_threshold": 0.3499999999999999
+}

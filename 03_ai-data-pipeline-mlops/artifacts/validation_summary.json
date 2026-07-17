@@ -1,0 +1,66 @@
+{
+  "project": "AI Data Pipeline & MLOps Deployment",
+  "date": "2026-08-29",
+  "evidence_gate": "PASSED",
+  "model_version": "0.2.0",
+  "source": {
+    "rows": 10000,
+    "zip_sha256": "F601F14294BCF190F9D720676B7F0AEA46A26CDE9AB8EBC7B4F8174D9D26B252",
+    "csv_sha256": "DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E"
+  },
+  "test": {
+    "rows": 1500,
+    "failures": 29,
+    "roc_auc": 0.9316439672753698,
+    "average_precision": 0.6972496471494228,
+    "precision": 0.6666666666666666,
+    "recall": 0.6206896551724138,
+    "f1": 0.6428571428571429,
+    "brier": 0.010476187269870936,
+    "confusion": {
+      "tn": 1462,
+      "fp": 9,
+      "fn": 11,
+      "tp": 18
+    }
+  },
+  "baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.019333333333333334,
+    "brier": 0.019374938775510206
+  },
+  "monitoring": {
+    "status": "ALERT",
+    "max_psi": 7.502172011415795,
+    "max_psi_feature": "Air temperature [K]",
+    "process_temperature_psi": 2.972335783128396
+  },
+  "reproducibility": {
+    "idempotency": "PASSED",
+    "clean_rebuild": "PASSED",
+    "evidence_hash": "76E75E7E792FF3AF90CAE5CBBA409F487E8FAC4A3133A2AF022B3830EB93FAC7"
+  },
+  "pytest": {
+    "passed": 11,
+    "failed": 0
+  },
+  "workflow": {
+    "stages": 8,
+    "status": "PASSED"
+  },
+  "docker": {
+    "image_id": "sha256:262fb2ca5b9f3f3a40ddcaf6bee4c3e58351cb00ea01b09977152c2fb9539213",
+    "smoke": "PASSED",
+    "invalid_payload_status": 422
+  },
+  "release": {
+    "version": "0.2.0",
+    "verification": "PASSED",
+    "rollback_recovery": "PASSED"
+  },
+  "figures": {
+    "svg": 3,
+    "svg_parse": "PASSED"
+  },
+  "remote_publication": "NOT PERFORMED"
+}

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "model.joblib": true,
+    "model_manifest.json": true,
+    "model_metrics.json": true,
+    "pipeline_manifest.json": true,
+    "requirements.txt": true
+  },
+  "release_version": "0.2.0",
+  "valid": true
+}

@@ -1,0 +1,19 @@
+{
+  "after": {
+    "deterministic_evidence_hash": "76E75E7E792FF3AF90CAE5CBBA409F487E8FAC4A3133A2AF022B3830EB93FAC7",
+    "metrics_sha256": "262DF41F91DC89E10E3081C551C7F396BBE60EF008D7AC9863FDF05D8631FBEB",
+    "model_sha256": "9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950",
+    "predictions_sha256": "7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52",
+    "source_sha256": "DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E"
+  },
+  "all_expected_hashes_reproduced": true,
+  "checks": {
+    "deterministic_evidence_hash": true,
+    "metrics_sha256": true,
+    "model_sha256": true,
+    "predictions_sha256": true,
+    "source_sha256": true
+  },
+  "generated_from_clean_artifact_state": true,
+  "prior_manifest_available": true
+}

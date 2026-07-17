@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:262fb2ca5b9f3f3a40ddcaf6bee4c3e58351cb00ea01b09977152c2fb9539213",
+    "health":  {
+                   "status":  "ok",
+                   "model_ready":  true,
+                   "version":  "0.2.0"
+               },
+    "model_info":  {
+                       "model_version":  "0.2.0",
+                       "threshold":  0.3499999999999999,
+                       "features":  [
+                                        "Type",
+                                        "Air temperature [K]",
+                                        "Process temperature [K]",
+                                        "Rotational speed [rpm]",
+                                        "Torque [Nm]",
+                                        "Tool wear [min]"
+                                    ]
+                   },
+    "prediction":  {
+                       "model_version":  "0.2.0",
+                       "failure_probability":  0.0,
+                       "prediction":  0,
+                       "threshold":  0.3499999999999999
+                   },
+    "invalid_status":  422,
+    "metrics":  {
+                    "request_count":  5,
+                    "error_count":  1,
+                    "error_rate":  0.2,
+                    "mean_latency_ms":  177.06880174998219,
+                    "p95_latency_ms":  697.4329239999406,
+                    "p99_latency_ms":  697.4329239999406,
+                    "window_size":  4
+                }
+}

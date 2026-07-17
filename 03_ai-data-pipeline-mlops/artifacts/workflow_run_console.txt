@@ -1,0 +1,89 @@
+{
+  "workflow": "local evidence pipeline",
+  "status": "PASSED",
+  "tasks": [
+    {
+      "name": "fetch_data",
+      "attempt": 1,
+      "max_attempts": 2,
+      "returncode": 0,
+      "duration_s": 0.17129049999994095,
+      "stdout_tail": "FETCH_PASS\nzip_sha256=F601F14294BCF190F9D720676B7F0AEA46A26CDE9AB8EBC7B4F8174D9D26B252\ncsv_sha256=DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "baseline",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 1.901493500000015,
+      "stdout_tail": "{\n  \"baseline\": \"constant training-prevalence probability\",\n  \"training_prevalence\": 0.039714285714285716,\n  \"test_prevalence\": 0.019333333333333334,\n  \"roc_auc\": 0.5,\n  \"average_precision\": 0.019333333333333334,\n  \"brier\": 0.019374938775510206,\n  \"interpretation\": \"weak non-discriminating reference only; not a deployable model\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "train_version",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 2.6025529999999435,
+      "stdout_tail": "{\n  \"model_version\": \"0.2.0\",\n  \"source_rows\": 10000,\n  \"source_sha256\": \"DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E\",\n  \"split_rows\": {\n    \"train\": 7000,\n    \"validation\": 1500,\n    \"test\": 1500\n  },\n  \"split_failure_prevalence\": {\n    \"train\": 0.039714285714285716,\n    \"validation\": 0.021333333333333333,\n    \"test\": 0.019333333333333334\n  },\n  \"validation_threshold\": 0.3499999999999999,\n  \"validation_f1_at_threshold\": 0.6666666666666666,\n  \"test\": {\n    \"rows\": 1500,\n    \"failures\": 29,\n    \"prevalence\": 0.019333333333333334,\n    \"threshold\": 0.3499999999999999,\n    \"roc_auc\": 0.9316439672753698,\n    \"average_precision\": 0.6972496471494228,\n    \"precision\": 0.6666666666666666,\n    \"recall\": 0.6206896551724138,\n    \"f1\": 0.6428571428571429,\n    \"brier\": 0.010476187269870936,\n    \"confusion_matrix\": {\n      \"tn\": 1462,\n      \"fp\": 9,\n      \"fn\": 11,\n      \"tp\": 18\n    }\n  },\n  \"numeric_feature_psi_train_vs_test\": {\n    \"Air temperature [K]\": 7.502172011415795,\n    \"Process temperature [K]\": 2.972335783128396,\n    \"Rotational speed [rpm]\": 0.007750790057463118,\n    \"Torque [Nm]\": 0.007908735338291938,\n    \"Tool wear [min]\": 0.005907886045358774\n  },\n  \"max_numeric_psi\": 7.502172011415795,\n  \"model\": \"RandomForestClassifier(n_estimators=100,class_weight=balanced,min_samples_leaf=2,random_state=42,n_jobs=1)\",\n  \"leakage_fields_excluded\": [\n    \"UDI\",\n    \"Product ID\",\n    \"TWF\",\n    \"HDF\",\n    \"PWF\",\n    \"OSF\",\n    \"RNF\"\n  ],\n  \"runtime_observation\": {\n    \"batch_rows\": 1500,\n    \"batch_latency_ms\": 13.674599999831116,\n    \"mean_latency_ms_per_row\": 0.009116399999887411,\n    \"note\": \"environment-specific runtime observation; excluded from deterministic evidence hash\"\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "monitor",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 1.7844321999998556,
+      "stdout_tail": "{\n  \"rows\": 1500,\n  \"numeric_psi\": {\n    \"Air temperature [K]\": 7.502172011415795,\n    \"Process temperature [K]\": 2.972335783128396,\n    \"Rotational speed [rpm]\": 0.007750790057463118,\n    \"Torque [Nm]\": 0.007908735338291938,\n    \"Tool wear [min]\": 0.005907886045358774\n  },\n  \"max_numeric_psi\": 7.502172011415795,\n  \"max_numeric_psi_feature\": \"Air temperature [K]\",\n  \"type_distribution_total_variation\": 0.01376190476190476,\n  \"missing_feature_cells\": 0,\n  \"nonfinite_numeric_cells\": 0,\n  \"status\": \"ALERT\",\n  \"threshold_note\": \"PSI>=0.25 or type total-variation>=0.10 is a project monitoring rule, not a universal production standard\",\n  \"reference\": \"UDI 1-7000 training split\",\n  \"current\": \"UDI 8501-10000 frozen test split\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "idempotency",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 3.686601699999983,
+      "stdout_tail": "IDEMPOTENCY_PASS\n{\n  \"runs\": 2,\n  \"checks\": {\n    \"source_sha256\": true,\n    \"model_sha256\": true,\n    \"metrics_sha256\": true,\n    \"predictions_sha256\": true,\n    \"deterministic_evidence_hash\": true\n  },\n  \"all_deterministic_hashes_match\": true,\n  \"run1\": {\n    \"source_sha256\": \"DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E\",\n    \"model_sha256\": \"9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950\",\n    \"metrics_sha256\": \"262DF41F91DC89E10E3081C551C7F396BBE60EF008D7AC9863FDF05D8631FBEB\",\n    \"predictions_sha256\": \"7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52\",\n    \"deterministic_evidence_hash\": \"76E75E7E792FF3AF90CAE5CBBA409F487E8FAC4A3133A2AF022B3830EB93FAC7\"\n  },\n  \"run2\": {\n    \"source_sha256\": \"DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E\",\n    \"model_sha256\": \"9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950\",\n    \"metrics_sha256\": \"262DF41F91DC89E10E3081C551C7F396BBE60EF008D7AC9863FDF05D8631FBEB\",\n    \"predictions_sha256\": \"7E7DB35B1E91E91119FF4D5FDCB57E7C3355DE26D106A67A3E3851CBED070C52\",\n    \"deterministic_evidence_hash\": \"76E75E7E792FF3AF90CAE5CBBA409F487E8FAC4A3133A2AF022B3830EB93FAC7\"\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "tests",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 9.228627299999971,
+      "stdout_tail": "...........                                                              [100%]\n11 passed in 5.60s\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "release_build",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 1.776460699999916,
+      "stdout_tail": "RELEASE_BUILD_PASS\n{\n  \"release_version\": \"0.2.0\",\n  \"files\": {\n    \"model.joblib\": \"9323A0470BB35F0E4E1AE460E7BAB976A52978629D13A64A18B905F85B197950\",\n    \"model_manifest.json\": \"43EB242F18543A04DE123674B6D5FD65A47A7CEC27BE2CB41F91D7E383008ADE\",\n    \"model_metrics.json\": \"262DF41F91DC89E10E3081C551C7F396BBE60EF008D7AC9863FDF05D8631FBEB\",\n    \"pipeline_manifest.json\": \"68FEC40DDD2052ED0AAB15CB9EA05FF9E4D4E6248431FC0401B258F15EC8A468\",\n    \"requirements.txt\": \"34F54DD2359EADEBE71F9B1400B8D15CE9662EF2EA1EC97560A5F726F189824D\"\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "release_verify",
+      "attempt": 1,
+      "max_attempts": 1,
+      "returncode": 0,
+      "duration_s": 1.7621490999999878,
+      "stdout_tail": "RELEASE_VERIFY_PASS\n{\n  \"release_version\": \"0.2.0\",\n  \"checks\": {\n    \"model.joblib\": true,\n    \"model_manifest.json\": true,\n    \"model_metrics.json\": true,\n    \"pipeline_manifest.json\": true,\n    \"requirements.txt\": true\n  },\n  \"valid\": true\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "completed_tasks": [
+    "fetch_data",
+    "baseline",
+    "train_version",
+    "monitor",
+    "idempotency",
+    "tests",
+    "release_build",
+    "release_verify"
+  ],
+  "boundary": "local Python orchestration; no Airflow/Prefect/cloud orchestrator claim"
+}
