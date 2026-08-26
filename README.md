@@ -28,3 +28,9 @@ KUMC Agentic AI; Northeastern Associate AI Engineer; Harvard AI Automation Quali
 9. Learning Analytics & Student Success Data Product
 
 Do not promote planned AI/MLOps/security keywords into applications until the relevant evidence gate passes.
+
+## Documentation
+
+- [Repository guide](docs/REPOSITORY_GUIDE.md) — layout, conventions, what to run
+- [Research narrative](docs/RESEARCH_NARRATIVE.md) — six-month development arc
+- [Track status matrix](docs/TRACK_STATUS.md) — implementation vs evidence gate
