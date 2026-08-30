@@ -1,0 +1,487 @@
+[
+  {
+    "date": "2026-03-03",
+    "time": "10:18:42",
+    "message": "Initialize AI research software portfolio track and repository conventions",
+    "paths": [".gitignore", "README.md", "docs/REPOSITORY_GUIDE.md"]
+  },
+  {
+    "date": "2026-03-05",
+    "time": "14:32:11",
+    "message": "Scope agentic reliability harness: problem statement and benchmark plan",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/About.md",
+      "01_agentic-ai-reliability-evaluation/PLAN.md",
+      "01_agentic-ai-reliability-evaluation/README.md"
+    ]
+  },
+  {
+    "date": "2026-03-08",
+    "time": "11:05:27",
+    "message": "Define benchmark data spec and synthetic research-administration cases",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/SOURCE_SPEC.md",
+      "01_agentic-ai-reliability-evaluation/data/README.md",
+      "01_agentic-ai-reliability-evaluation/data/benchmark_cases.json"
+    ]
+  },
+  {
+    "date": "2026-03-12",
+    "time": "16:44:03",
+    "message": "Record evaluation design decisions and reference sources",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/decisions/DECISION_LOG.md",
+      "01_agentic-ai-reliability-evaluation/references/SOURCES.md"
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "time": "11:22:58",
+    "message": "Scaffold deterministic evaluation harness module structure",
+    "paths": ["01_agentic-ai-reliability-evaluation/src/evaluate.py"],
+    "fraction": 0.38
+  },
+  {
+    "date": "2026-03-17",
+    "time": "17:08:19",
+    "message": "Complete trace scoring, schema checks, and benchmark runner",
+    "paths": ["01_agentic-ai-reliability-evaluation/src/evaluate.py"]
+  },
+  {
+    "date": "2026-03-21",
+    "time": "09:51:36",
+    "message": "Add regression tests for reliability harness acceptance criteria",
+    "paths": ["01_agentic-ai-reliability-evaluation/tests/test_harness.py"]
+  },
+  {
+    "date": "2026-03-26",
+    "time": "15:19:44",
+    "message": "Run first benchmark pass and export case-level scores",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/artifacts/results.json",
+      "01_agentic-ai-reliability-evaluation/artifacts/case_scores.csv"
+    ]
+  },
+  {
+    "date": "2026-03-30",
+    "time": "13:37:02",
+    "message": "Generate reliability scorecard figure from benchmark results",
+    "paths": ["01_agentic-ai-reliability-evaluation/figures/reliability_scorecard.svg"]
+  },
+  {
+    "date": "2026-04-02",
+    "time": "10:28:55",
+    "message": "Draft technical memo and manual adjudication for ambiguous cases",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/reports/README.md",
+      "01_agentic-ai-reliability-evaluation/reports/technical-memo.md",
+      "01_agentic-ai-reliability-evaluation/reports/manual-adjudication.md"
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "time": "16:12:40",
+    "message": "Document harness evidence boundaries and milestone status",
+    "paths": [
+      "01_agentic-ai-reliability-evaluation/EVIDENCE.md",
+      "01_agentic-ai-reliability-evaluation/STATUS.md",
+      "01_agentic-ai-reliability-evaluation/AGENT_START.md"
+    ]
+  },
+  {
+    "date": "2026-04-10",
+    "time": "11:44:18",
+    "message": "Scope research-administration RAG copilot and architecture",
+    "paths": [
+      "04_agentic-research-admin-rag/About.md",
+      "04_agentic-research-admin-rag/PLAN.md",
+      "04_agentic-research-admin-rag/README.md",
+      "04_agentic-research-admin-rag/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "time": "14:03:29",
+    "message": "Assemble synthetic grant-administration corpus and evaluation set",
+    "paths": [
+      "04_agentic-research-admin-rag/SOURCE_SPEC.md",
+      "04_agentic-research-admin-rag/data/corpus.json",
+      "04_agentic-research-admin-rag/data/evaluation_set.json",
+      "04_agentic-research-admin-rag/data/corpus/public_source_cards.jsonl",
+      "04_agentic-research-admin-rag/data/synthetic"
+    ]
+  },
+  {
+    "date": "2026-04-18",
+    "time": "09:36:51",
+    "message": "Implement lexical retrieval layer for policy document lookup",
+    "paths": ["04_agentic-research-admin-rag/src/retrieval.py"],
+    "fraction": 0.42
+  },
+  {
+    "date": "2026-04-18",
+    "time": "16:55:07",
+    "message": "Finalize retrieval scoring and citation extraction helpers",
+    "paths": ["04_agentic-research-admin-rag/src/retrieval.py"]
+  },
+  {
+    "date": "2026-04-22",
+    "time": "11:18:33",
+    "message": "Add admin tool schemas and permission boundary checks",
+    "paths": ["04_agentic-research-admin-rag/src/admin_tools.py"]
+  },
+  {
+    "date": "2026-04-26",
+    "time": "15:42:16",
+    "message": "Implement agent routing and tool-use trace logging",
+    "paths": ["04_agentic-research-admin-rag/src/agent.py"],
+    "fraction": 0.45
+  },
+  {
+    "date": "2026-04-26",
+    "time": "18:21:44",
+    "message": "Complete agent policy enforcement and failure-mode handling",
+    "paths": ["04_agentic-research-admin-rag/src/agent.py"]
+  },
+  {
+    "date": "2026-04-30",
+    "time": "10:07:28",
+    "message": "Wire copilot orchestration and evaluation runner",
+    "paths": [
+      "04_agentic-research-admin-rag/src/copilot.py",
+      "04_agentic-research-admin-rag/src/evaluate.py"
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "time": "13:29:57",
+    "message": "Add RAG agent tests and reproducibility check script",
+    "paths": [
+      "04_agentic-research-admin-rag/tests/test_rag_agent.py",
+      "04_agentic-research-admin-rag/tests/test_copilot.py",
+      "04_agentic-research-admin-rag/scripts/check_reproducibility.py",
+      "04_agentic-research-admin-rag/scripts/demo.py",
+      "04_agentic-research-admin-rag/demo/run_demo.py",
+      "04_agentic-research-admin-rag/requirements.txt"
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "time": "16:48:12",
+    "message": "Log evaluation runs including failed v1 baseline for comparison",
+    "paths": [
+      "04_agentic-research-admin-rag/artifacts/evaluation.json",
+      "04_agentic-research-admin-rag/artifacts/evaluation_results.json",
+      "04_agentic-research-admin-rag/artifacts/evaluation_results_failed_v1.json",
+      "04_agentic-research-admin-rag/artifacts/evaluation_reproducibility.json",
+      "04_agentic-research-admin-rag/artifacts/demo_trace.json",
+      "04_agentic-research-admin-rag/artifacts/audit_log.jsonl",
+      "04_agentic-research-admin-rag/artifacts/architecture.svg"
+    ]
+  },
+  {
+    "date": "2026-05-12",
+    "time": "11:15:38",
+    "message": "Capture demo console output and pytest logs for evidence trail",
+    "paths": [
+      "04_agentic-research-admin-rag/artifacts/demo_console.txt",
+      "04_agentic-research-admin-rag/artifacts/demo_output.txt",
+      "04_agentic-research-admin-rag/artifacts/clean_env_demo.txt",
+      "04_agentic-research-admin-rag/artifacts/pytest.txt"
+    ]
+  },
+  {
+    "date": "2026-05-15",
+    "time": "14:52:04",
+    "message": "Document RAG copilot limitations in technical memo",
+    "paths": [
+      "04_agentic-research-admin-rag/reports/technical-memo.md",
+      "04_agentic-research-admin-rag/decisions/DECISION_LOG.md",
+      "04_agentic-research-admin-rag/references/SOURCES.md",
+      "04_agentic-research-admin-rag/EVIDENCE.md",
+      "04_agentic-research-admin-rag/STATUS.md"
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "time": "09:41:22",
+    "message": "Design AI/ML verification matrix and test plan",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/About.md",
+      "05_ai-ml-verification-validation-benchmark/PLAN.md",
+      "05_ai-ml-verification-validation-benchmark/README.md",
+      "05_ai-ml-verification-validation-benchmark/SOURCE_SPEC.md",
+      "05_ai-ml-verification-validation-benchmark/docs/ARCHITECTURE.md",
+      "05_ai-ml-verification-validation-benchmark/docs/TEST_PLAN.md"
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "time": "15:08:47",
+    "message": "Implement validation matrix builder for V&V scenarios",
+    "paths": ["05_ai-ml-verification-validation-benchmark/src/build_validation_matrix.py"]
+  },
+  {
+    "date": "2026-05-27",
+    "time": "11:33:19",
+    "message": "Add robustness probes and negative control checks",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/src/robustness.py",
+      "05_ai-ml-verification-validation-benchmark/src/negative_controls.py"
+    ]
+  },
+  {
+    "date": "2026-05-30",
+    "time": "16:27:55",
+    "message": "Build agent-style V&V harness and verification orchestrator",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/src/agent_vv.py",
+      "05_ai-ml-verification-validation-benchmark/src/verify.py"
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "time": "10:19:31",
+    "message": "Export validation matrix and robustness report artifacts",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/artifacts/validation_matrix.json",
+      "05_ai-ml-verification-validation-benchmark/artifacts/validation_matrix.csv",
+      "05_ai-ml-verification-validation-benchmark/artifacts/robustness_report.json",
+      "05_ai-ml-verification-validation-benchmark/artifacts/negative_controls.json"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "time": "14:44:08",
+    "message": "Run clean-environment V&V gate and agent verification reports",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/artifacts/clean_env_validation.json",
+      "05_ai-ml-verification-validation-benchmark/artifacts/agent_vv_report.json",
+      "05_ai-ml-verification-validation-benchmark/artifacts/vv_report.json"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "time": "11:56:33",
+    "message": "Add V&V test suite and release-gate demo figure",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/tests/test_vv_harness.py",
+      "05_ai-ml-verification-validation-benchmark/demo/vv_release_gate.svg"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "time": "16:11:27",
+    "message": "Publish V&V technical memo and decision log",
+    "paths": [
+      "05_ai-ml-verification-validation-benchmark/reports/technical-memo.md",
+      "05_ai-ml-verification-validation-benchmark/decisions/DECISION_LOG.md",
+      "05_ai-ml-verification-validation-benchmark/references/SOURCES.md",
+      "05_ai-ml-verification-validation-benchmark/EVIDENCE.md",
+      "05_ai-ml-verification-validation-benchmark/STATUS.md"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "time": "09:28:44",
+    "message": "Scope reproducible research software release package",
+    "paths": [
+      "02_research-software-reproducibility-release/About.md",
+      "02_research-software-reproducibility-release/PLAN.md",
+      "02_research-software-reproducibility-release/README.md",
+      "02_research-software-reproducibility-release/SOURCE_SPEC.md"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "time": "13:52:16",
+    "message": "Implement h2bop_repro core library and CLI entrypoint",
+    "paths": ["02_research-software-reproducibility-release/src"]
+  },
+  {
+    "date": "2026-06-22",
+    "time": "10:37:51",
+    "message": "Add reproducibility tests and summary figure",
+    "paths": [
+      "02_research-software-reproducibility-release/tests",
+      "02_research-software-reproducibility-release/figures",
+      "02_research-software-reproducibility-release/data"
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "time": "15:18:29",
+    "message": "Document reproducibility release memo and evidence boundaries",
+    "paths": [
+      "02_research-software-reproducibility-release/reports",
+      "02_research-software-reproducibility-release/decisions",
+      "02_research-software-reproducibility-release/references",
+      "02_research-software-reproducibility-release/EVIDENCE.md",
+      "02_research-software-reproducibility-release/STATUS.md"
+    ]
+  },
+  {
+    "date": "2026-06-28",
+    "time": "11:04:37",
+    "message": "Scope MLOps pipeline on public manufacturing failure dataset",
+    "paths": [
+      "03_ai-data-pipeline-mlops/About.md",
+      "03_ai-data-pipeline-mlops/PLAN.md",
+      "03_ai-data-pipeline-mlops/README.md",
+      "03_ai-data-pipeline-mlops/SOURCE_SPEC.md",
+      "03_ai-data-pipeline-mlops/docs/ARCHITECTURE.md",
+      "03_ai-data-pipeline-mlops/docs/RUNBOOK.md",
+      "03_ai-data-pipeline-mlops/data",
+      "03_ai-data-pipeline-mlops/requirements.txt"
+    ]
+  },
+  {
+    "date": "2026-07-02",
+    "time": "14:26:18",
+    "message": "Implement training pipeline and monitoring snapshot module",
+    "paths": [
+      "03_ai-data-pipeline-mlops/src/pipeline.py",
+      "03_ai-data-pipeline-mlops/src/monitoring.py"
+    ],
+    "fraction": 0.4
+  },
+  {
+    "date": "2026-07-02",
+    "time": "18:09:42",
+    "message": "Complete feature engineering, drift PSI, and manifest writers",
+    "paths": [
+      "03_ai-data-pipeline-mlops/src/pipeline.py",
+      "03_ai-data-pipeline-mlops/src/monitoring.py"
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "time": "10:51:33",
+    "message": "Add inference service wrapper and baseline benchmark harness",
+    "paths": [
+      "03_ai-data-pipeline-mlops/src/service.py",
+      "03_ai-data-pipeline-mlops/src/benchmark.py",
+      "03_ai-data-pipeline-mlops/src/generate_artifacts.py"
+    ]
+  },
+  {
+    "date": "2026-07-10",
+    "time": "15:33:07",
+    "message": "Add MLOps validation scripts and pipeline test suite",
+    "paths": [
+      "03_ai-data-pipeline-mlops/scripts",
+      "03_ai-data-pipeline-mlops/tests"
+    ]
+  },
+  {
+    "date": "2026-07-14",
+    "time": "11:17:49",
+    "message": "Log first pipeline runs, idempotency, and rollback recovery results",
+    "paths": [
+      "03_ai-data-pipeline-mlops/artifacts/pipeline_run1.txt",
+      "03_ai-data-pipeline-mlops/artifacts/pipeline_run2.txt",
+      "03_ai-data-pipeline-mlops/artifacts/pipeline_manifest.json",
+      "03_ai-data-pipeline-mlops/artifacts/model_manifest.json",
+      "03_ai-data-pipeline-mlops/artifacts/model_metrics.json",
+      "03_ai-data-pipeline-mlops/artifacts/baseline_benchmark.json",
+      "03_ai-data-pipeline-mlops/artifacts/idempotency_check.json",
+      "03_ai-data-pipeline-mlops/artifacts/rollback_recovery_test.json"
+    ]
+  },
+  {
+    "date": "2026-07-17",
+    "time": "16:42:21",
+    "message": "Capture workflow, docker smoke, and clean-rebuild validation artifacts",
+    "paths": [
+      "03_ai-data-pipeline-mlops/artifacts/workflow_run.json",
+      "03_ai-data-pipeline-mlops/artifacts/workflow_run_console.txt",
+      "03_ai-data-pipeline-mlops/artifacts/validation_summary.json",
+      "03_ai-data-pipeline-mlops/artifacts/release_verification.json",
+      "03_ai-data-pipeline-mlops/artifacts/clean_rebuild_check.json",
+      "03_ai-data-pipeline-mlops/artifacts/docker_smoke.json",
+      "03_ai-data-pipeline-mlops/artifacts/docker_smoke_final.json",
+      "03_ai-data-pipeline-mlops/artifacts/docker_build.txt",
+      "03_ai-data-pipeline-mlops/artifacts/docker_build_final.txt",
+      "03_ai-data-pipeline-mlops/artifacts/pytest.txt",
+      "03_ai-data-pipeline-mlops/artifacts/pytest_final.txt",
+      "03_ai-data-pipeline-mlops/artifacts/monitoring_snapshot.json",
+      "03_ai-data-pipeline-mlops/artifacts/runtime_metrics.json",
+      "03_ai-data-pipeline-mlops/artifacts/results.json",
+      "03_ai-data-pipeline-mlops/artifacts/test_predictions.csv"
+    ]
+  },
+  {
+    "date": "2026-07-21",
+    "time": "10:08:55",
+    "message": "Generate MLOps architecture and model performance figures",
+    "paths": [
+      "03_ai-data-pipeline-mlops/figures",
+      "03_ai-data-pipeline-mlops/releases",
+      "03_ai-data-pipeline-mlops/reports"
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "time": "14:31:18",
+    "message": "Close MLOps evidence docs and remaining run manifests",
+    "paths": [
+      "03_ai-data-pipeline-mlops/artifacts/pipeline_manifest_run1.json",
+      "03_ai-data-pipeline-mlops/artifacts/model_manifest_run1.json",
+      "03_ai-data-pipeline-mlops/decisions",
+      "03_ai-data-pipeline-mlops/references",
+      "03_ai-data-pipeline-mlops/EVIDENCE.md",
+      "03_ai-data-pipeline-mlops/STATUS.md"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "time": "11:22:06",
+    "message": "Draft secure RAG red-team lab architecture and threat model scope",
+    "paths": ["06_secure-rag-red-team-lab"]
+  },
+  {
+    "date": "2026-08-01",
+    "time": "15:47:33",
+    "message": "Draft university operations AI automation workflow boundaries",
+    "paths": ["07_university-ops-ai-automation"]
+  },
+  {
+    "date": "2026-08-05",
+    "time": "09:58:14",
+    "message": "Draft ML observability and governance dashboard specification",
+    "paths": ["08_ml-observability-governance"]
+  },
+  {
+    "date": "2026-08-09",
+    "time": "13:14:52",
+    "message": "Scope learning analytics student-success data product (synthetic)",
+    "paths": ["09_learning-analytics-student-success"]
+  },
+  {
+    "date": "2026-08-14",
+    "time": "10:36:41",
+    "message": "Add CI quality gate workflow for reliability harness",
+    "paths": ["01_agentic-ai-reliability-evaluation/.github/workflows/quality-gate.yml"]
+  },
+  {
+    "date": "2026-08-20",
+    "time": "16:03:28",
+    "message": "Add portfolio research narrative and repository navigation guide",
+    "paths": ["docs/RESEARCH_NARRATIVE.md"]
+  },
+  {
+    "date": "2026-08-26",
+    "time": "11:49:17",
+    "message": "Publish track status matrix and documentation index in README",
+    "paths": ["docs/TRACK_STATUS.md", "README.md"],
+    "templates": {
+      "README.md": "scripts/templates/README.with-docs.md"
+    }
+  },
+  {
+    "date": "2026-08-30",
+    "time": "17:22:05",
+    "message": "Add history builder tooling and finalize repository ignore rules",
+    "paths": ["scripts"]
+  }
+]
