@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this local portfolio software artifact, cite the software package and its upstream DWSIM/NIST provenance."
+title: "h2bop-repro: Green-Hydrogen Compressor Benchmark Reproducibility Package"
+version: 0.1.0
+date-released: 2026-08-29
+type: software
+license: MIT

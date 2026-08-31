@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.git/
+data/
+tests/
+notebooks/
+figures/
+reports/
+docs/
+artifacts/*.csv
+artifacts/*.json
+!artifacts/model_manifest.json
