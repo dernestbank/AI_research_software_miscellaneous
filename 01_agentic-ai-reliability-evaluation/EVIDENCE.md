@@ -1,19 +1,15 @@
 ---
 title: "Agentic AI Reliability & Evaluation Harness"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Evidence Record
 
 ## Current status
-NOT RESUME-READY.
-
-## Target roles
-KUMC Agentic AI; Harvard AI Automation Quality; Penn State AI/ML V&V; UC Berkeley BIDS Agentic AI
+NOT VALIDATED.
 
 ## Boundary
 Benchmark/project evidence only; do not claim production healthcare validation, formal AI safety certification, or classified-system IV&V.
@@ -23,16 +19,16 @@ Benchmark/project evidence only; do not claim production healthcare validation, 
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after real implementation.
 
-## Interview explanation
-### 30 seconds
+## Technical summary
+### Summary
 TBD
 
-### 2 minutes
+### Technical detail
 TBD

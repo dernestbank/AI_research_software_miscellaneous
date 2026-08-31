@@ -1,7 +1,7 @@
 # Operations Runbook — AI4I MLOps Service
 
 ## Scope
-This runbook covers the local/containerized portfolio service only. It does not claim production SRE coverage, cloud deployment, Kubernetes, or enterprise incident response.
+This runbook covers the local/containerized research service only. It does not claim production SRE coverage, cloud deployment, Kubernetes, or enterprise incident response.
 
 ## Normal release flow
 1. Retrieve/verify source: `python scripts/fetch_data.py`.

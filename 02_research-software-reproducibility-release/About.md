@@ -1,19 +1,15 @@
 ---
 title: "Research Software Reproducibility Release"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # About
 
 ## Purpose
-Close this repeated hiring gap: **professional research-software packaging, CI, release engineering, reproducibility, benchmark fixtures and contributor readiness**.
-
-## Target roles
-Virginia Tech RSE AI/ML; Berkeley BIDS RSE/Product; Johns Hopkins DSAI RSE; Penn State Software R&D
+Research focus: **professional research-software packaging, CI, release engineering, reproducibility, benchmark fixtures and contributor readiness**.
 
 ## Suggested tools
 Use one existing scientific codebase; Python packaging; Git/GitHub; pytest; Docker/dev container if actually used

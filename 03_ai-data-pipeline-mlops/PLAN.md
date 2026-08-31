@@ -1,11 +1,10 @@
 ---
 title: "AI Data Pipeline & MLOps Deployment"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Detailed Plan
 
@@ -31,11 +30,11 @@ tags: [portfolio, evidence-building, higheredjobs]
 - [ ] Check reproducibility from clean inputs.
 - [ ] Record uncertainty and limitations.
 
-## Phase 3 — Recruiter evidence
+## Phase 3 — Results and communication
 - [ ] Create one high-signal figure/dashboard/architecture view.
 - [ ] Write reports/technical-memo.md.
 - [ ] Populate EVIDENCE.md with exact metrics.
-- [ ] Write 30-second and 2-minute interview explanations.
+- [ ] Write concise and detailed technical summaries.
 
 ## Phase 4 — Publication
 - [ ] Remove secrets/private paths/restricted data.

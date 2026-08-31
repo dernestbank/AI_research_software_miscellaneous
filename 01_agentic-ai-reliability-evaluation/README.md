@@ -1,23 +1,18 @@
 ---
 title: "Agentic AI Reliability & Evaluation Harness"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Agentic AI Reliability & Evaluation Harness
 
-## Start here
+## Project workflow
 1. Read About.md.
-2. Read AGENTS.md.
-3. Execute PLAN.md from the first unchecked item.
-4. Update STATUS.md after meaningful work.
-5. Promote only validated outputs into EVIDENCE.md.
+2. Execute PLAN.md from the first unchecked item.
+3. Update STATUS.md after meaningful work.
+4. Promote only validated outputs into EVIDENCE.md.
 
-## Targets
-KUMC Agentic AI; Harvard AI Automation Quality; Penn State AI/ML V&V; UC Berkeley BIDS Agentic AI
-
-## Gap
+## Technical scope
 agent/RAG evaluation, tool-call correctness, regression testing, safety/reliability, failure taxonomy and observable quality gates

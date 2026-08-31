@@ -34,7 +34,7 @@ def run():
         "requirements_passed":sum(x["passed"] for x in requirements),
         "requirements_total":len(requirements),
         "disposition":"PASS" if all(x["passed"] for x in requirements) else "HOLD",
-        "boundary":"Independent read-only check of sibling portfolio evaluation artifact; not institutional certification."
+        "boundary":"Independent read-only check of sibling research evaluation artifact; not institutional certification."
     }
     OUT.write_text(json.dumps(result,indent=2),encoding="utf-8")
     print(json.dumps(result,indent=2))

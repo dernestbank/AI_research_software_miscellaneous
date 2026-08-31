@@ -194,3 +194,11 @@ results/local/
 .nox/
 hypothesis/
 .pytest_tmp/
+
+# === Private local workflow / repository maintenance ===
+AGENT_START.md
+docs/RESEARCH_NARRATIVE.md
+scripts/README.md
+scripts/build_research_history.ps1
+scripts/commit-manifest.json
+scripts/templates/README.with-docs.md

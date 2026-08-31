@@ -35,5 +35,5 @@ NIST AI RMF 1.0 and the NIST Generative AI Profile are used as high-level TEVV/r
 ## Limitations
 The benchmark is small, synthetic, and hand-authored. The guarded fixture is derived from expected outputs, so its 100% score validates scoring/regression plumbing rather than model intelligence. Latency and token fields are deterministic fixture metadata, not API measurements. No real retrieval model, agent SDK, commercial model, or live MCP server is scored in this MVP. A future extension should add frozen live-model traces across model/prompt versions while preserving the same evidence contract.
 
-## Recruiter interpretation
+## Reviewer interpretation
 The defensible claim is that this project implements a reproducible agent-evaluation harness with frozen cases, trace scoring, schema/citation/safety gates, adversarial cases, failure taxonomy, regression comparison, bootstrap sensitivity analysis, manual adjudication, tests, and a scorecard. The project does not support claims of 100% LLM reliability.

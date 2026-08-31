@@ -1,23 +1,18 @@
 ---
 title: "Research Software Reproducibility Release"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Research Software Reproducibility Release
 
-## Start here
+## Project workflow
 1. Read About.md.
-2. Read AGENTS.md.
-3. Execute PLAN.md from the first unchecked item.
-4. Update STATUS.md after meaningful work.
-5. Promote only validated outputs into EVIDENCE.md.
+2. Execute PLAN.md from the first unchecked item.
+3. Update STATUS.md after meaningful work.
+4. Promote only validated outputs into EVIDENCE.md.
 
-## Targets
-Virginia Tech RSE AI/ML; Berkeley BIDS RSE/Product; Johns Hopkins DSAI RSE; Penn State Software R&D
-
-## Gap
+## Technical scope
 professional research-software packaging, CI, release engineering, reproducibility, benchmark fixtures and contributor readiness

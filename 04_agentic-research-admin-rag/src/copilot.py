@@ -109,7 +109,7 @@ class ResearchAdminCopilot:
         elif tool == "document_compare":
             result = self._compare(args)
         else:
-            result = {"simulated": True, "note": "approved external action not executed in portfolio demo"}
+            result = {"simulated": True, "note": "approved external action not executed in research demo"}
         self.audit.append({"action": "tool", "tool": tool, "args": args, "ok": True, "approved": approved})
         return ToolResult(tool, True, result)
 

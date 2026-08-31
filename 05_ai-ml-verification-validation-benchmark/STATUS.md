@@ -1,6 +1,6 @@
 ---
 title: "AI/ML Verification & Validation Benchmark"
-type: portfolio-project
+type: research-project
 status: in-progress
 updated: 2026-08-31
 ---
@@ -15,7 +15,7 @@ updated: 2026-08-31
 - [x] Core implementation working (matrix, robustness, agent V&V, verify)
 - [x] Artifact bundle generated (matrix, robustness, negative controls)
 - [ ] Validation passed (clean-environment gate)
-- [x] Recruiter-readable demo figure
+- [x] Summary demo figure
 - [ ] Technical memo complete (draft exists)
 - [ ] EVIDENCE.md complete
 

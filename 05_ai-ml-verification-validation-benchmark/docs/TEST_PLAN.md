@@ -1,14 +1,14 @@
 # Formal V&V Test Plan
 
 ## Purpose
-Evaluate two already-built portfolio systems with independent, requirement-based checks:
+Evaluate two already-built research systems with independent, requirement-based checks:
 1. Primary ML SUT: AI4I predictive-maintenance MLOps release 0.2.0.
 2. Secondary agent SUT: research-administration RAG/tool-use copilot.
 
 The V&V harness may pass even if a SUT receives HOLD. A HOLD is an expected valid outcome when a release requirement fails.
 
 ## Evidence boundary
-This is portfolio TEVV evidence only. It is not certification, formal third-party validation, DoD verification authority, regulated qualification, or safety-critical approval.
+This is research TEVV evidence only. It is not certification, formal third-party validation, DoD verification authority, regulated qualification, or safety-critical approval.
 
 ## ML SUT requirements
 | ID | Requirement | Criterion | Rationale |
@@ -74,6 +74,6 @@ The **V&V project evidence gate** passes when:
 - robustness/subgroup/calibration analyses execute reproducibly;
 - SUT requirement results are reported without suppressing failures;
 - clean-environment reproduction passes;
-- recruiter report/artifact and technical memo are complete.
+- reviewer report/artifact and technical memo are complete.
 
 The ML SUT release disposition is independent and remains HOLD if any required ML release criterion fails.

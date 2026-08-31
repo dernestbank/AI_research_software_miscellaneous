@@ -1,19 +1,15 @@
 ---
 title: "AI Data Pipeline & MLOps Deployment"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Evidence Record
 
 ## Current status
-NOT RESUME-READY.
-
-## Target roles
-Northeastern Associate AI; University of Michigan Data & AI; Iowa State MLOps; Indiana Tech Enterprise AI
+NOT VALIDATED.
 
 ## Boundary
 No enterprise-scale, Kubernetes, cloud-platform, warehouse, or production MLOps claims unless actually implemented and tested.
@@ -23,16 +19,16 @@ No enterprise-scale, Kubernetes, cloud-platform, warehouse, or production MLOps 
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after real implementation.
 
-## Interview explanation
-### 30 seconds
+## Technical summary
+### Summary
 TBD
 
-### 2 minutes
+### Technical detail
 TBD

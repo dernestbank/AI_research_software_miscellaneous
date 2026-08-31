@@ -42,7 +42,7 @@
     "requirements_passed": 5,
     "requirements_total": 5
   },
-  "boundary": "Portfolio V&V harness. SUT dispositions are project requirement decisions, not formal certification.",
+  "boundary": "Research V&V harness. SUT dispositions are project requirement decisions, not formal certification.",
   "ml_sut": {
     "disposition": "HOLD",
     "ece_10bin": 0.011003502398304374,

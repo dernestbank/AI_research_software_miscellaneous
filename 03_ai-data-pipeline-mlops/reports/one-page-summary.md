@@ -44,7 +44,7 @@ Frozen test split triggers project drift ALERT:
 ## Validation
 - 11/11 pytest checks passed.
 - Local eight-stage workflow: PASSED.
-- 3 recruiter SVGs parse successfully.
+- 3 summary SVGs parse successfully.
 - GitHub Actions workflow defined locally; remote CI run not claimed.
 
 ## Boundary

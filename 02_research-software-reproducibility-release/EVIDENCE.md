@@ -1,19 +1,15 @@
 ---
 title: "Research Software Reproducibility Release"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # Evidence Record
 
 ## Current status
-NOT RESUME-READY.
-
-## Target roles
-Virginia Tech RSE AI/ML; Berkeley BIDS RSE/Product; Johns Hopkins DSAI RSE; Penn State Software R&D
+NOT VALIDATED.
 
 ## Boundary
 Do not claim external adoption, maintainer status, community impact, or production scale without repository evidence.
@@ -23,16 +19,16 @@ Do not claim external adoption, maintainer status, community impact, or producti
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after real implementation.
 
-## Interview explanation
-### 30 seconds
+## Technical summary
+### Summary
 TBD
 
-### 2 minutes
+### Technical detail
 TBD

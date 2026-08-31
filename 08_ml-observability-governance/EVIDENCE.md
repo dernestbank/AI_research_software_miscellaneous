@@ -1,13 +1,10 @@
 # Evidence Record
 
 ## Status
-NOT RESUME-READY.
-
-## Target roles
-Northeastern Associate AI Engineer; MLOps and enterprise AI governance roles
+NOT VALIDATED.
 
 ## Boundary
-Portfolio governance controls only; do not claim formal compliance certification.
+Research governance controls only; do not claim formal compliance certification.
 
 ## Verified outputs
 - [ ] Working implementation
@@ -23,16 +20,16 @@ Portfolio governance controls only; do not claim formal compliance certification
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after implementation.
 
-## 30-second explanation
+## Concise summary
 TBD
 
-## 2-minute technical explanation
+## Technical summary
 TBD
 

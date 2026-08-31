@@ -1,23 +1,18 @@
 ---
 title: "AI Data Pipeline & MLOps Deployment"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # AI Data Pipeline & MLOps Deployment
 
-## Start here
+## Project workflow
 1. Read About.md.
-2. Read AGENTS.md.
-3. Execute PLAN.md from the first unchecked item.
-4. Update STATUS.md after meaningful work.
-5. Promote only validated outputs into EVIDENCE.md.
+2. Execute PLAN.md from the first unchecked item.
+3. Update STATUS.md after meaningful work.
+4. Promote only validated outputs into EVIDENCE.md.
 
-## Targets
-Northeastern Associate AI; University of Michigan Data & AI; Iowa State MLOps; Indiana Tech Enterprise AI
-
-## Gap
+## Technical scope
 orchestration, data-quality, deployable ML/LLM service, CI/CD, monitoring, versioning and failure-recovery evidence

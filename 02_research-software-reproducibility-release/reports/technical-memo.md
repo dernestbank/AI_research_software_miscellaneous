@@ -7,7 +7,7 @@
 Package a previously validated Green-H2 balance-of-plant compressor reconciliation as small, installable and auditable research software. The package is a reproducibility/validation layer; it does not rerun DWSIM or create new process-simulation results.
 
 ## Scientific fixture
-The frozen fixture comes from the completed DWSIM-MCP portfolio project. Four valid 20→200 bar H2 compression cases are retained at 750, 1,500, 3,000 and 6,000 kg H2/day. DWSIM duties are 49.1311, 98.2623, 196.5245 and 393.0491 kW. The independent NIST-Shomate-based estimates are 48.4812, 96.9625, 193.9249 and 387.8499 kW.
+The frozen fixture comes from the completed DWSIM-MCP research project. Four valid 20→200 bar H2 compression cases are retained at 750, 1,500, 3,000 and 6,000 kg H2/day. DWSIM duties are 49.1311, 98.2623, 196.5245 and 393.0491 kW. The independent NIST-Shomate-based estimates are 48.4812, 96.9625, 193.9249 and 387.8499 kW.
 
 ## Validation contract
 A release candidate passes only when all four valid scenarios are present; solver success and zero recorded warnings are retained; absolute recorded mass-balance error is <=1e-9 kg/s; compressor duty is positive and monotonic with plant scale; DWSIM-versus-independent duty difference is <=5%; and the preserved solver-success/physics-failure case is rejected by the physical-validity gate.

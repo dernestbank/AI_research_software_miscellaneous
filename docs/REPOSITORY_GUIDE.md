@@ -1,6 +1,6 @@
 # AI Research Software — Repository Guide
 
-Portfolio track for agentic AI, research software engineering, MLOps, and applied ML validation evidence. Each numbered directory is an independent project with its own scope boundary, validation plan, and evidence gate.
+Research collection for agentic AI, research software engineering, MLOps, and applied ML validation evidence. Each numbered directory is an independent project with its own scope boundary, validation plan, and evidence gate.
 
 ## Layout convention
 
@@ -15,7 +15,7 @@ Portfolio track for agentic AI, research software engineering, MLOps, and applie
 | `tests/` | Automated checks tied to acceptance criteria |
 | `data/` | Versioned inputs (public or labeled synthetic) |
 | `artifacts/` | Generated run outputs (JSON, CSV, logs) |
-| `figures/` or `demo/` | Recruiter-readable visual summaries |
+| `figures/` or `demo/` | Summary visual summaries |
 | `reports/` | Technical memos and adjudication notes |
 | `references/` | External sources and version pins |
 | `decisions/` | Engineering decision log |
@@ -54,8 +54,4 @@ python src/evaluate.py
 pytest
 ```
 
-Re-run validation before citing metrics in applications or `EVIDENCE.md`.
-
-## History note
-
-Commit history is organized around research milestones (benchmark design → harness → runs → figures → memos), not workspace sync events. See `docs/RESEARCH_NARRATIVE.md` for the development arc.
+Re-run validation before citing metrics or `EVIDENCE.md`.

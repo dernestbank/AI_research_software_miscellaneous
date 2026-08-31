@@ -1,10 +1,7 @@
 # About
 
 ## Purpose
-Build defensible portfolio evidence for: prompt injection, data exfiltration, tool abuse, adversarial evaluation and mitigation
-
-## Target roles
-CMU Associate AI Red Team Engineer; AI Red Team Engineer; AI Security Researcher
+Research focus: prompt injection, data exfiltration, tool abuse, adversarial evaluation and mitigation
 
 ## Evidence boundary
 Test only systems and data you own or are authorized to test.

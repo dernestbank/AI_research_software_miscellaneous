@@ -45,6 +45,6 @@
     "source_type":"synthetic",
     "url":"synthetic://research-office/copilot-permissions-v1",
     "tags":["permissions","safety","audit"],
-    "text":"Synthetic policy for demonstration only: read-only policy search, checklist generation, deadline lookup, and document comparison are allowed. Sending email, submitting applications, deleting records, or changing permissions requires explicit human approval and remains simulated in this portfolio system."
+    "text":"Synthetic policy for demonstration only: read-only policy search, checklist generation, deadline lookup, and document comparison are allowed. Sending email, submitting applications, deleting records, or changing permissions requires explicit human approval and remains simulated in this research system."
   }
 ]

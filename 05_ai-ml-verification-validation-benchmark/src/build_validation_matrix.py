@@ -87,7 +87,7 @@ def run():
                 "recommendation":"Treat PASS as bounded regression evidence only; expand corpus/query diversity before any production claim."
             }
         ],
-        "boundary":"Portfolio V&V harness. SUT dispositions are project requirement decisions, not formal certification."
+        "boundary":"Research V&V harness. SUT dispositions are project requirement decisions, not formal certification."
     }
     (ART/"validation_matrix.json").write_text(json.dumps(result,indent=2,sort_keys=True),encoding="utf-8")
     with open(ART/"validation_matrix.csv","w",newline="",encoding="utf-8") as f:

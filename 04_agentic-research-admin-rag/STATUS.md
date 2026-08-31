@@ -1,6 +1,6 @@
 ---
 title: "Agentic Research Administration RAG & Tool-Use Copilot"
-type: portfolio-project
+type: research-project
 status: in-progress
 updated: 2026-08-31
 ---
@@ -15,7 +15,7 @@ updated: 2026-08-31
 - [x] Inputs/data ready (synthetic corpus + evaluation set)
 - [x] Core implementation working (retrieval, agent, copilot, tests)
 - [ ] Validation passed
-- [x] Recruiter-readable artifacts (demo trace, architecture figure)
+- [x] Summary artifacts (demo trace, architecture figure)
 - [ ] Technical memo complete (draft exists)
 - [ ] EVIDENCE.md complete
 

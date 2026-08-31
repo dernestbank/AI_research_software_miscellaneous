@@ -1,10 +1,7 @@
 # Evidence Record
 
 ## Status
-NOT RESUME-READY.
-
-## Target roles
-Indiana Tech Enterprise AI & Automation Engineer; Northeastern Associate AI Engineer; Vanderbilt Applied AI Engineer
+NOT VALIDATED.
 
 ## Boundary
 Do not claim production integration with real university systems or realized operational savings.
@@ -23,16 +20,16 @@ Do not claim production integration with real university systems or realized ope
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after implementation.
 
-## 30-second explanation
+## Concise summary
 TBD
 
-## 2-minute technical explanation
+## Technical summary
 TBD
 

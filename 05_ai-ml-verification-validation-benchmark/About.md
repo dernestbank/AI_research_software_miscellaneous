@@ -1,10 +1,7 @@
 # About
 
 ## Purpose
-Build defensible portfolio evidence for: systematic AI evaluation, robustness, regression testing, QA automation and release gates
-
-## Target roles
-Penn State AI/ML Verification and Validation Engineer; Harvard AI Automation Quality Engineer
+Research focus: systematic AI evaluation, robustness, regression testing, QA automation and release gates
 
 ## Evidence boundary
 Do not claim formal certification, DoD verification authority, or safety-critical qualification.

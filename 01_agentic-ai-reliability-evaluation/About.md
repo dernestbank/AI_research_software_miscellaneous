@@ -1,19 +1,15 @@
 ---
 title: "Agentic AI Reliability & Evaluation Harness"
-type: portfolio-project
+type: research-project
 status: planned
 created: 2026-08-28
 updated: 2026-08-28
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # About
 
 ## Purpose
-Close this repeated hiring gap: **agent/RAG evaluation, tool-call correctness, regression testing, safety/reliability, failure taxonomy and observable quality gates**.
-
-## Target roles
-KUMC Agentic AI; Harvard AI Automation Quality; Penn State AI/ML V&V; UC Berkeley BIDS Agentic AI
+Research focus: **agent/RAG evaluation, tool-call correctness, regression testing, safety/reliability, failure taxonomy and observable quality gates**.
 
 ## Suggested tools
 Python; pytest; one actually used LLM/agent SDK; MCP tools where useful; Docker/CI only after verified use

@@ -1,8 +1,8 @@
 # Technical Memo — AI Data Pipeline & MLOps Deployment
 
-**Date:** 2026-08-29  
-**Evidence status:** VALIDATED / RESUME-READY  
-**Boundary:** Local/containerized MLOps portfolio implementation on a public synthetic benchmark. No factory deployment, cloud-scale, Kubernetes, or enterprise production claim.
+**Date:** 2026-08-29
+**Evidence status:** VALIDATED
+**Boundary:** Local/containerized MLOps research implementation on a public synthetic benchmark. No factory deployment, cloud-scale, Kubernetes, or enterprise production claim.
 
 ## Executive summary
 A reproducible predictive-maintenance ML service was built around the UCI AI4I 2020 dataset. The project verifies the official source by SHA-256, enforces schema and leakage controls, uses a deterministic UDI-ordered train/validation/test split, trains and versions a small random-forest classifier, exposes a versioned FastAPI inference service, containerizes the service, records request/error/latency metrics, monitors feature drift, verifies deterministic reruns, packages a versioned release, and exercises rollback recovery.
@@ -210,7 +210,7 @@ Pinned key dependencies:
 
 ## 11. Limitations
 - Source data are synthetic, not measured factory telemetry.
-- Chronological split is a portfolio stress test, not a production temporal validation protocol.
+- Chronological split is a scenario stress test, not a production temporal validation protocol.
 - The model is not calibrated or validated for real equipment.
 - No causal failure prediction claim.
 - No automated retraining.

@@ -47,7 +47,7 @@ fig.savefig(FIG/"feature_drift_psi.svg")
 fig.savefig(FIG/"feature_drift_psi.png",dpi=180)
 plt.close(fig)
 
-# Architecture SVG: deliberately simple recruiter-readable system view.
+# Architecture SVG: deliberately simple system view.
 svg="""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
 <style>
 text { font-family: Arial, sans-serif; fill: #111; }
@@ -58,7 +58,7 @@ text { font-family: Arial, sans-serif; fill: #111; }
 .arrow { stroke: #333; stroke-width: 2.2; fill: none; marker-end: url(#a); }
 </style>
 <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
-<text x="40" y="45" class="title">AI Data Pipeline &amp; MLOps Deployment — Evidence Architecture</text>
+<text x="40" y="45" class="title">AI Data Pipeline &amp; MLOps Deployment — System Architecture</text>
 <rect x="40" y="100" width="190" height="95" class="box"/><text x="60" y="130" class="h">UCI AI4I</text><text x="60" y="155" class="s">CC BY 4.0</text><text x="60" y="178" class="s">10,000 synthetic rows</text>
 <rect x="285" y="100" width="210" height="95" class="box"/><text x="305" y="130" class="h">Ingest + QA</text><text x="305" y="155" class="s">SHA-256, schema, leakage</text><text x="305" y="178" class="s">UDI 70/15/15 split</text>
 <rect x="550" y="100" width="210" height="95" class="box"/><text x="570" y="130" class="h">Train + Validate</text><text x="570" y="155" class="s">RF 100 trees</text><text x="570" y="178" class="s">validation threshold</text>
@@ -68,7 +68,7 @@ text { font-family: Arial, sans-serif; fill: #111; }
 <rect x="285" y="300" width="210" height="105" class="box"/><text x="305" y="332" class="h">Validation</text><text x="305" y="357" class="s">11/11 pytest</text><text x="305" y="380" class="s">idempotency + smoke tests</text>
 <path d="M230 148 L285 148" class="arrow"/><path d="M495 148 L550 148" class="arrow"/><path d="M760 148 L815 148" class="arrow"/>
 <path d="M920 195 L920 300" class="arrow"/><path d="M815 352 L760 352" class="arrow"/><path d="M550 352 L495 352" class="arrow"/>
-<text x="40" y="470" class="s">Boundary: local/containerized portfolio implementation. No Kubernetes, cloud-scale, factory deployment, or production business-impact claim.</text>
+<text x="40" y="470" class="s">Boundary: local/containerized research implementation. No Kubernetes, cloud-scale, factory deployment, or production business-impact claim.</text>
 </svg>"""
 (FIG/"mlops_architecture.svg").write_text(svg,encoding="utf-8")
 print("generated", [p.name for p in FIG.iterdir() if p.is_file()])

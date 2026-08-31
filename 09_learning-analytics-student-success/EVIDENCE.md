@@ -1,10 +1,7 @@
 # Evidence Record
 
 ## Status
-NOT RESUME-READY.
-
-## Target roles
-Utah State Analytics Engineer - Student Success; Penn State Learning Analytics Applications Developer
+NOT VALIDATED.
 
 ## Boundary
 Use public or synthetic data only; do not claim real student intervention outcomes.
@@ -23,16 +20,16 @@ Use public or synthetic data only; do not claim real student intervention outcom
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after implementation.
 
-## 30-second explanation
+## Concise summary
 TBD
 
-## 2-minute technical explanation
+## Technical summary
 TBD
 

@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Reproducible validation package for a bounded green-hydrogen compressor benchmark"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Portfolio project"}]
+authors = []
 dependencies = []
 
 [project.scripts]

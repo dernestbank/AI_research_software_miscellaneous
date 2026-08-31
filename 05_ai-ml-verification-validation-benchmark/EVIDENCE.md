@@ -1,10 +1,7 @@
 # Evidence Record
 
 ## Status
-NOT RESUME-READY.
-
-## Target roles
-Penn State AI/ML Verification and Validation Engineer; Harvard AI Automation Quality Engineer
+NOT VALIDATED.
 
 ## Boundary
 Do not claim formal certification, DoD verification authority, or safety-critical qualification.
@@ -23,16 +20,16 @@ Do not claim formal certification, DoD verification authority, or safety-critica
 |---|---:|---|---|
 | TBD | TBD | TBD | TBD |
 
-## Resume-safe bullets
+## Validated findings
 - TBD
 - TBD
 
-## ATS keywords unlocked
+## Implemented technical capabilities
 TBD after implementation.
 
-## 30-second explanation
+## Concise summary
 TBD
 
-## 2-minute technical explanation
+## Technical summary
 TBD
 

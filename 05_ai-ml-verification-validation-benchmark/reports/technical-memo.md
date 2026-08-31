@@ -1,8 +1,8 @@
 # Technical Memo — AI/ML Verification & Validation Benchmark
 
-**Date:** 2026-08-29  
-**Harness evidence status:** VALIDATED / RESUME-READY  
-**ML SUT disposition:** HOLD  
+**Date:** 2026-08-29
+**Harness evidence status:** VALIDATED
+**ML SUT disposition:** HOLD
 **Agent SUT disposition:** PASS
 
 ## Executive summary
@@ -90,4 +90,4 @@ A prior pytest launch hit a connector 502 before a result was returned. That exe
 - **Agent:** scoped PASS. Expand corpus and evaluation diversity before broader reliability claims.
 
 ## Evidence boundary
-This is a portfolio V&V/TEVV harness. It is not formal third-party certification, DoD verification authority, regulated qualification, safety-critical approval, or production release authority.
+This is a research V&V/TEVV harness. It is not formal third-party certification, DoD verification authority, regulated qualification, safety-critical approval, or production release authority.

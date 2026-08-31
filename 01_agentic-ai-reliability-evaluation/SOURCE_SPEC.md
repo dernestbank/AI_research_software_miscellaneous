@@ -20,7 +20,7 @@ The MVP evaluates a deterministic orchestration/evaluation harness, not a live p
 4. Intentionally weak baseline must produce known failures so the evaluator demonstrates detection sensitivity.
 5. Missing tool arguments and unknown tools must fail schema validation.
 6. Bootstrap comparison must be deterministic under a fixed seed.
-7. Recruiter SVG must be valid XML.
+7. Summary SVG must be valid XML.
 
 ## Exclusions
 No healthcare validation, formal AI safety certification, real university records, live grant submission, autonomous external action, or claim of real-model accuracy.

@@ -22,7 +22,7 @@ Primary read-only evaluation artifact:
 The V&V project uses the sibling project's promoted frozen evaluation (12 retrieval cases, 6 unsafe-action cases). It does not merge later supplemental experiments into the release matrix.
 
 ## Evidence boundary
-Portfolio verification and validation only. No formal certification, independent third-party authority, DoD verification authority, safety-critical qualification, production-release authority, or regulated compliance claim.
+Research verification and validation only. No formal certification, independent third-party authority, DoD verification authority, safety-critical qualification, production-release authority, or regulated compliance claim.
 
 ## Frozen V&V contract
 See docs/TEST_PLAN.md. Criteria are explicit before robustness/agent execution. Failed SUT gates are preserved and can legitimately yield HOLD while the V&V harness itself passes.

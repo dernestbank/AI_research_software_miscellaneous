@@ -1,3 +1,3 @@
 # Sources
 
-Record HigherEdJobs role sources, datasets, framework/API documentation, benchmarks, papers, licenses, retrieval dates, and intended use.
+Record datasets, framework/API documentation, benchmarks, papers, standards, licenses, retrieval dates, and intended use.

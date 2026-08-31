@@ -1,11 +1,10 @@
 ---
 title: "AI Data Pipeline & MLOps Deployment"
-type: portfolio-project
+type: research-project
 status: in-progress
 created: 2026-08-28
 updated: 2026-08-31
-source_plan: "HigherEdJobs Profile Project Roadmap - 2026-08-28"
-tags: [portfolio, evidence-building, higheredjobs]
+tags: [research, reproducibility]
 ---
 # STATUS
 
@@ -16,10 +15,10 @@ tags: [portfolio, evidence-building, higheredjobs]
 
 ## Milestones
 - [x] Scope/references frozen
-- [x] Inputs/data ready (public UCI AI4I 2020 — portfolio use)
+- [x] Inputs/data ready (public UCI AI4I 2020 — research use)
 - [x] Core implementation working (pipeline, monitoring, service, scripts)
 - [ ] Validation passed (release gate re-run pending)
-- [x] Recruiter-readable artifacts (figures, release manifest)
+- [x] Summary artifacts (figures, release manifest)
 - [ ] Technical memo complete (draft exists)
 - [ ] EVIDENCE.md complete
 - [ ] GitHub/publication ready
